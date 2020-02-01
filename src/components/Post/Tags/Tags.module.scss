@@ -21,6 +21,7 @@
         border: 1px solid $color-gray-border;
         text-decoration: none;
         border-radius: $button-border-radius;
+        font-size: $typographic-base-font-size * 1.1;
         color: $color-base;
 
         &:hover,

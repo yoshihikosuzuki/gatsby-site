@@ -65,7 +65,7 @@
     }
 
     &-readmore {
-      font-size: $typographic-base-font-size;
+      font-size: $typographic-base-font-size * 1.125;
       color: $color-primary;
 
       &:hover,

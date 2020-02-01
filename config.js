@@ -22,7 +22,7 @@ module.exports = {
   ],
   author: {
     name: 'Yoshihiko Suzuki',
-    photo: '/gatsby-icon.png',
+    photo: '/photo.png',
     bio: 'A bioinformatician.',
     contacts: {
       twitter: 'yetnone',
