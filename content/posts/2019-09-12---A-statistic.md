@@ -1,14 +1,20 @@
 ---
 title: ゲノムアセンブリの A-statistic
+date: "2019-09-12"
 template: "post"
+draft: false
+slug: "assembly-a-statistic"
 category: "Bioinformatics"
+tags:
+  - "Genome assembly"
+description: 'Myers, E. W. A Whole-Genome Assembly of Drosophila. Science 287, 2196–2204 (2000) にある "A-statistic" について。'
 ---
 
-ほとんど自分用メモ。[Myers, E. W. A Whole-Genome Assembly of Drosophila. *Science*  287, 2196–2204 (2000)](https://science.sciencemag.org/content/287/5461/2196) にある "A-statistic" (ググラビリティが低い) について。
+ほとんど自分用メモ。[Myers, E. W. A Whole-Genome Assembly of Drosophila. _Science_ 287, 2196–2204 (2000)](https://science.sciencemag.org/content/287/5461/2196) にある "A-statistic" について。
 
-* Given: $N$ 個の (途切れていない) リード
-* Given: 長さ $G$ bp のゲノム
-* Given: (平均) リード深度 $d$
+- Given: $N$ 個の (途切れていない) リード
+- Given: 長さ $G$ bp のゲノム
+- Given: (平均) リード深度 $d$
 
 このとき、「平均リード深度が $d$ のときに $\rho$ bp の区間内から $k$ 個のリードが開始する確率」= 「長さ $\rho$ bp のコンティグが $k$ 個のリードから構成される確率」を $p(k\vert d)$ と書くと、
 
