@@ -10,7 +10,7 @@ import "./Search.scss";
 
 const searchClient = algoliasearch(
   "WX370V53Q1",
-  "a007fbe3467b9fae337237fa0c0b1be8"
+  "1665612ac25b52d4734b5116002f1415"
 );
 
 const Search = () => (
