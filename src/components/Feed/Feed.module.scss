@@ -29,7 +29,7 @@
     }
 
     &-description {
-      font-size: $typographic-base-font-size;
+      font-size: $typographic-base-font-size * 1.125;
       @include line-height(1);
       @include margin-bottom(.75);
     }
