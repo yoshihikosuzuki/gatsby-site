@@ -8,12 +8,17 @@ module.exports = {
   copyright: '',
   disqusShortname: '',
   postsPerPage: 4,
+  articlesPerPage: 10,
   googleAnalyticsId: 'UA-142767811-1',
   useKatex: true,
   menu: [
     {
       label: 'Posts',
       path: '/'
+    },
+    {
+      label: 'Articles',
+      path: '/articles'
     },
     {
       label: 'About me',
