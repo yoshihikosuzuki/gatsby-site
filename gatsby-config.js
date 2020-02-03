@@ -217,6 +217,16 @@ module.exports = {
         queries,
         chunkSize: 10000 // default: 1000
       }
+    },
+    {
+      resolve: `gatsby-plugin-google-fonts`,
+      options: {
+        fonts: [
+          `lato\:400,400i,600,600i,700,700i`
+          //`ABeeZee\:400,400i,600,600i,700,700i`
+        ],
+        display: 'swap'
+      }
     }
   ]
 };

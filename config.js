@@ -26,9 +26,9 @@ module.exports = {
     }
   ],
   author: {
-    name: 'Yoshihiko Suzuki',
-    photo: '/photo.png',
-    bio: 'A bioinformatician.',
+    name: 'NIKKI',
+    photo: '/icon.jpeg',
+    bio: '',
     contacts: {
       twitter: 'yetnone',
       github: 'yoshihikosuzuki',

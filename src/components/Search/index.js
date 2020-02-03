@@ -15,7 +15,12 @@ const searchClient = algoliasearch(
 
 const Search = () => (
   <InstantSearch indexName="gatsby" searchClient={searchClient}>
-    <SearchBox />
+    <SearchBox
+      autoFocus={false}
+      translations={{
+        placeholder: ""
+      }}
+    />
     <CustomStateResults />
   </InstantSearch>
 );

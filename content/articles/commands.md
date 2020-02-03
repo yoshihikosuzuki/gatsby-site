@@ -1,13 +1,8 @@
 ---
 title: たまによく使う(？)コマンドやテンプレート
-date: "2019-10-12"
 template: "article"
-draft: false
 slug: "commands-templates"
-category: "Programming"
-tags:
-  - "Programming"
-description: 'Commands and templates'
+description: '時間局所的には頻繁に使うが、大域的にはあまり使わないコマンド等をメモしておく場所'
 ---
 
 ## Emacs
