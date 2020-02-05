@@ -1,10 +1,10 @@
 // @flow strict
-import React from 'react';
-import Helmet from 'react-helmet';
-import { withPrefix } from 'gatsby';
-import type { Node as ReactNode } from 'react';
-import { useSiteMetadata } from '../../hooks';
-import styles from './Layout.module.scss';
+import React from "react";
+import Helmet from "react-helmet";
+import { withPrefix } from "gatsby";
+import type { Node as ReactNode } from "react";
+import { useSiteMetadata } from "../../hooks";
+import styles from "./Layout.module.scss";
 
 type Props = {
   children: ReactNode,
@@ -12,11 +12,7 @@ type Props = {
   description?: string
 };
 
-const Layout = ({
-  children,
-  title,
-  description
-}: Props) => {
+const Layout = ({ children, title, description }: Props) => {
   return (
     <div className={styles.layout}>
       <Helmet>

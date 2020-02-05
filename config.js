@@ -17,7 +17,7 @@ module.exports = {
       path: '/'
     },
     {
-      label: 'Articles',
+      label: 'Memo',
       path: '/articles'
     },
     {
@@ -26,8 +26,8 @@ module.exports = {
     }
   ],
   author: {
-    name: 'NIKKI',
-    photo: '/icon.jpeg',
+    name: 'Yoshihiko Suzuki',
+    photo: '',
     bio: '',
     contacts: {
       twitter: 'yetnone',
