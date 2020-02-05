@@ -62,7 +62,9 @@ e = np.random.normal(0, np.sqrt(variance), [N, 1]).astype(dtype)
 y_observed = np.matmul(X, beta_true) + e
 ```
 
-各次元での $x_{i\cdot}$ と $y_i$ の関係は<a href="/plotly/linear_regression_data.html" target="_blank" rel="noopener noreferrer">プロット</a>のようになった (右にある各 legend をシングルクリックでその legend のプロットを消す/表示する、ダブルクリックでそれ以外の legend のプロットを消す/表示する)。 $\beta$ が大きい次元ほどデータの相関の傾向が強い。
+各次元での $x_{i\cdot}$ と $y_i$ の関係は下のプロットのようになった (画像をクリックすると interactive plot が開く)。 $\beta$ が大きい次元ほどデータの相関の傾向が強い。
+
+<a href="/plotly/linear_regression_data.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/linear_regression_data.png"></a>
 
 ## 最尤推定
 
@@ -222,6 +224,14 @@ beta_samples, noise_var_samples = do_samplings(n_iters, beta=beta_samples[-1])
 
 最終的に`beta_samples[:, i]`が $\beta_i$ の、`noise_var_samples`が $\sigma^2$ の、それぞれサンプル列になっているので、それらの頻度分布を正規化したものを事後分布の近似として 事後平均や MAP 推定値などを求めればよい。各パラメタのサンプル列の頻度分布および推移は下の図のようになった。
 
+<a href="/plotly/linear_regression_gibbs_beta_posterior.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/linear_regression_gibbs_beta_posterior.png"></a>
+
+<a href="/plotly/linear_regression_gibbs_beta_chain_plot.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/linear_regression_gibbs_beta_chain_plot.png"></a>
+
+<a href="/plotly/linear_regression_gibbs_var_posterior.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/linear_regression_gibbs_var_posterior.png"></a>
+
+<a href="/plotly/linear_regression_gibbs_var_chain_plot.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/linear_regression_gibbs_var_chain_plot.png"></a>
+
 ### ハミルトニアンモンテカルロ法
 
 ハイパーパラメタはギブスサンプリングと同じ値を使う。
@@ -289,6 +299,14 @@ beta_samples, noise_var_samples, is_accepted = sess.run([betas, noise_vars, kern
 
 `*_samples`はギブスサンプリングのものより 1 次元多いので、同じように扱いたい場合は`np.squeeze(*_samples)`する。また、`np.mean(is_accepted)`は MH 法の採択率になる。各パラメタのサンプル列の頻度分布および推移は下の図のようになった。
 
+<a href="/plotly/linear_regression_hmc_beta_posterior.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/linear_regression_hmc_beta_posterior.png"></a>
+
+<a href="/plotly/linear_regression_hmc_beta_chain_plot.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/linear_regression_hmc_beta_chain_plot.png"></a>
+
+<a href="/plotly/linear_regression_hmc_var_posterior.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/linear_regression_hmc_var_posterior.png"></a>
+
+<a href="/plotly/linear_regression_hmc_var_chain_plot.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/linear_regression_hmc_var_chain_plot.png"></a>
+
 ### 変分推論
 
 TODO
@@ -296,6 +314,10 @@ TODO
 ## 結果比較
 
 真の $\beta,\sigma^2$ と各手法で推定された $\hat{\beta},\hat{\sigma}^2$ のプロット、および、観測された $y$ と推定された真の値 $\hat{y}=X\hat{\beta}$ のプロットは以下のようになった。すべての手法で結果がほぼ一致している。
+
+<a href="/plotly/linear_regression_beta_estimates.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/linear_regression_beta_estimates.png"></a>
+
+<a href="/plotly/linear_regression_y_estimates.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/linear_regression_y_estimates.png"></a>
 
 ## 参考文献
 
