@@ -62,9 +62,7 @@ e = np.random.normal(0, np.sqrt(variance), [N, 1]).astype(dtype)
 y_observed = np.matmul(X, beta_true) + e
 ```
 
-各次元での $x_{i\cdot}$ と $y_i$ の関係は下のプロットのようになった (右にある各 legend をシングルクリックでその legend のプロットを消す/表示する、ダブルクリックでそれ以外の legend のプロットを消す/表示する)。 $\beta$ が大きい次元ほどデータの相関の傾向が強い。
-
-<iframe src="/linear_regression_data.html" width="300" height="150" style="border: none"></iframe>
+各次元での $x_{i\cdot}$ と $y_i$ の関係は<a href="/plotly/linear_regression_data.html" target="_blank" rel="noopener noreferrer">プロット</a>のようになった (右にある各 legend をシングルクリックでその legend のプロットを消す/表示する、ダブルクリックでそれ以外の legend のプロットを消す/表示する)。 $\beta$ が大きい次元ほどデータの相関の傾向が強い。
 
 ## 最尤推定
 
