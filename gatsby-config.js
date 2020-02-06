@@ -130,7 +130,7 @@ module.exports = {
           },
           "gatsby-remark-autolink-headers",
           "gatsby-remark-prismjs",
-          "gatsby-remark-copy-linked-files",
+          //"gatsby-remark-copy-linked-files",
           "gatsby-remark-smartypants"
         ]
       }
@@ -210,8 +210,8 @@ module.exports = {
       }
     },
     "gatsby-plugin-flow",
-    "gatsby-plugin-optimize-svgs",
-    /*{
+    //"gatsby-plugin-optimize-svgs",
+    {
       resolve: "gatsby-plugin-algolia",
       options: {
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
@@ -220,7 +220,7 @@ module.exports = {
         queries,
         chunkSize: 10000 // default: 1000
       }
-    },*/
+    },
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {

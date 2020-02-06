@@ -4,9 +4,9 @@ import Author from './Author';
 import Contacts from './Contacts';
 import Copyright from './Copyright';
 import Menu from './Menu';
+import Search from "./Search"
 import styles from './Sidebar.module.scss';
 import { useSiteMetadata } from '../../hooks';
-import Search from "../Search"
 
 type Props = {
   isIndex?: boolean,

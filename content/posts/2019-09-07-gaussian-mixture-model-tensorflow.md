@@ -13,7 +13,7 @@ tags:
 description: "TensorFlow (version 1.4), TensorFlow Probability, Edwards2 の勉強のために、最尤推定とベイズ推定の各種解法で、潜在変数ありの場合に代表的な混合ガウスモデルを解く。"
 ---
 
-TensorFlow (version 1.4), TensorFlow Probability, Edwards2 の勉強のために、最尤推定とベイズ推定の各種解法で、潜在変数ありの場合に代表的な混合ガウスモデルを解く。潜在変数なしの[線形回帰はこちら]({% post_url 2019-09-06-linear-regression-tensorflow %})。
+TensorFlow (version 1.4), TensorFlow Probability, Edwards2 の勉強のために、最尤推定とベイズ推定の各種解法で、潜在変数ありの場合に代表的な混合ガウスモデルを解く。潜在変数なしの[線形回帰はこちら](/posts/tensorflow-linear-regression)。
 
 [Jupyter Notebook はここ](https://nbviewer.jupyter.org/gist/yoshihikosuzuki/9d06ebb320789dd1a0c2389964a2d33e)。Plotly まわりのために [BITS](https://github.com/yoshihikosuzuki/BITS) という自作パッケージを使っているので、コードを動かす場合はインストールする。
 
@@ -61,7 +61,7 @@ x = np.array([np.random.multivariate_normal(mu_true[z_true[i]], sigma_true[z_tru
 
 生成したデータを 2 次元平面にプロットすると以下の通り。分布が気に入らなければ再度上のコードを実行して生成し直す。
 
-{% include plotly/gaussian_mixture_data.html %}
+<a href="/plotly/gaussian_mixture_data.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/gaussian_mixture_data.png"></a>
 
 ## 最尤推定
 
@@ -90,7 +90,7 @@ kmeans = KMeans(n_clusters=K, random_state=0).fit(x)
 
 結果は以下の通り。k-means は等分散を仮定しているため、分布ごとに分散が大きく異なる場合はうまくいかない。
 
-{% include plotly/gaussian_mixture_kmeans_result.html %}
+<a href="/plotly/gaussian_mixture_kmeans_result.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/gaussian_mixture_kmeans_result.png"></a>
 
 ### EM アルゴリズム (分散も推定)
 
@@ -186,21 +186,21 @@ var_init = np.full(K, 0.05, dtype=dtype)
 
 非正規化事後分布とパラメタ遷移のプロットは以下のようになった。$\mu,\sigma^2$ ともにちゃんと収束している。
 
-{% include plotly/gaussian_mixture_hmc_pi_posterior.html %}
+<a href="/plotly/gaussian_mixture_hmc_pi_posterior.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/gaussian_mixture_hmc_pi_posterior.png"></a>
 
-{% include plotly/gaussian_mixture_hmc_pi_chain_plot.html %}
+<a href="/plotly/gaussian_mixture_hmc_pi_chain_plot.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/gaussian_mixture_hmc_pi_chain_plot.png"></a>
 
-{% include plotly/gaussian_mixture_hmc_mu1_posterior.html %}
+<a href="/plotly/gaussian_mixture_hmc_mu1_posterior.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/gaussian_mixture_hmc_mu1_posterior.png"></a>
 
-{% include plotly/gaussian_mixture_hmc_mu1_chain_plot.html %}
+<a href="/plotly/gaussian_mixture_hmc_mu1_chain_plot.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/gaussian_mixture_hmc_mu1_chain_plot.png"></a>
 
-{% include plotly/gaussian_mixture_hmc_mu2_posterior.html %}
+<a href="/plotly/gaussian_mixture_hmc_mu2_posterior.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/gaussian_mixture_hmc_mu2_posterior.png"></a>
 
-{% include plotly/gaussian_mixture_hmc_mu2_chain_plot.html %}
+<a href="/plotly/gaussian_mixture_hmc_mu2_chain_plot.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/gaussian_mixture_hmc_mu2_chain_plot.png"></a>
 
-{% include plotly/gaussian_mixture_hmc_var_posterior.html %}
+<a href="/plotly/gaussian_mixture_hmc_var_posterior.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/gaussian_mixture_hmc_var_posterior.png"></a>
 
-{% include plotly/gaussian_mixture_hmc_var_chain_plot.html %}
+<a href="/plotly/gaussian_mixture_hmc_var_chain_plot.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/gaussian_mixture_hmc_var_chain_plot.png"></a>
 
 ### 変分推論
 

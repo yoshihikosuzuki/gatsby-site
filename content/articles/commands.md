@@ -2,7 +2,7 @@
 title: たまによく使う(？)コマンドやテンプレート
 template: "article"
 slug: "commands-templates"
-description: '時間局所的には頻繁に使うが、大域的にはあまり使わないコマンド等をメモしておく場所'
+description: "時間局所的には頻繁に使うが、大域的にはあまり使わないコマンド等をメモしておく場所"
 ---
 
 ## Emacs

@@ -1,3 +1,4 @@
+// @flow strict
 import React from "react";
 import algoliasearch from "algoliasearch/lite";
 import {
@@ -6,7 +7,7 @@ import {
   connectHits,
   connectStateResults
 } from "react-instantsearch-dom";
-import "./Search.scss";
+import styles from "./Search.module.scss";
 
 const searchClient = algoliasearch(
   "WX370V53Q1",
@@ -32,9 +33,11 @@ const CustomStateResults = connectStateResults(({ searchState }) =>
 const CustomHits = connectHits(({ hits }) => (
   <div>
     {hits.map(hit => (
-      <div className="search">
-        <a href={hit.path}>{hit.title}</a>
-        <p>{hit.description}</p>
+      <div className={styles["search"]}>
+        <a href={hit.path} className={styles["search__title"]}>
+          {hit.title}
+        </a>
+        <p className={styles["search__description"]}>{hit.description}</p>
       </div>
     ))}
   </div>

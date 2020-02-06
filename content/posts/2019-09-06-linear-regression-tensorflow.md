@@ -13,7 +13,7 @@ tags:
 description: "TensorFlow (version 1.4), TensorFlow Probability, Edwards2 の勉強のために、最尤推定とベイズ推定の各種解法で、潜在変数なしの場合に代表的な線形回帰を解く。"
 ---
 
-TensorFlow (version 1.4), TensorFlow Probability, Edwards2 の勉強のために、最尤推定とベイズ推定の各種解法で、潜在変数なしの場合に代表的な線形回帰を解く。潜在変数ありの[混合ガウス分布はこちら](/static/plotly/tensorflow-gaussian-mixture)。
+TensorFlow (version 1.4), TensorFlow Probability, Edwards2 の勉強のために、最尤推定とベイズ推定の各種解法で、潜在変数なしの場合に代表的な線形回帰を解く。潜在変数ありの[混合ガウス分布はこちら](/posts/tensorflow-gaussian-mixture)。
 
 [Jupyter Notebook はここ](https://nbviewer.jupyter.org/gist/yoshihikosuzuki/9d06ebb320789dd1a0c2389964a2d33e)。Plotly まわりのために [BITS](https://github.com/yoshihikosuzuki/BITS) という自作パッケージを使っているので、コードを動かす場合はインストールする。
 
@@ -64,7 +64,7 @@ y_observed = np.matmul(X, beta_true) + e
 
 各次元での $x_{i\cdot}$ と $y_i$ の関係は下のプロットのようになった (画像をクリックすると interactive plot が開く)。 $\beta$ が大きい次元ほどデータの相関の傾向が強い。
 
-<a href="linear_regression_data.html" target="_blank" rel="noopener noreferrer"><img src="linear_regression_data.png"></a>
+<a href="/plotly/linear_regression_data.html" target="_blank" rel="noopener noreferrer"><img src="/plotly/linear_regression_data.png"></a>
 
 ## 最尤推定
 

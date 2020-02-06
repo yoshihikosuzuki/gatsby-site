@@ -31,7 +31,7 @@ const ArticleTemplate = ({ data, pageContext }: Props) => {
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
-      <Sidebar isIndex />
+      <Sidebar />
       <Page>
         <Feed edges={edges} />
         <Pagination
