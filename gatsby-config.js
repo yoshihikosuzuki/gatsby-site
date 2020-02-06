@@ -124,11 +124,14 @@ module.exports = {
             resolve: "gatsby-remark-responsive-iframe",
             options: { wrapperStyle: "margin-bottom: 1.0725rem" }
           },
+          {
+            resolve: "gatsby-remark-external-links",
+            options: { rel: "noopener noreferrer" }
+          },
           "gatsby-remark-autolink-headers",
           "gatsby-remark-prismjs",
           "gatsby-remark-copy-linked-files",
-          "gatsby-remark-smartypants",
-          "gatsby-remark-external-links"
+          "gatsby-remark-smartypants"
         ]
       }
     },
@@ -208,7 +211,7 @@ module.exports = {
     },
     "gatsby-plugin-flow",
     "gatsby-plugin-optimize-svgs",
-    {
+    /*{
       resolve: "gatsby-plugin-algolia",
       options: {
         appId: process.env.GATSBY_ALGOLIA_APP_ID,
@@ -217,14 +220,12 @@ module.exports = {
         queries,
         chunkSize: 10000 // default: 1000
       }
-    },
+    },*/
     {
       resolve: `gatsby-plugin-google-fonts`,
       options: {
-        fonts: [
-          `lato\:400,400i,600,600i,700,700i`
-        ],
-        display: 'swap'
+        fonts: [`lato\:400,400i,600,600i,700,700i`],
+        display: "swap"
       }
     }
   ]
