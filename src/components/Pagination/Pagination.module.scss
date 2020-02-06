@@ -10,13 +10,13 @@
     text-align: left;
 
     &-link {
-      color: $color-secondary;
+      color: $color-base;
       font-size: 20px;
       font-weight: 400;
 
       &:hover,
       &:focus {
-        color: $color-secondary;
+        color: $color-base;
       }
 
       &--disable {
@@ -33,13 +33,13 @@
     text-align: right;
 
     &-link {
-      color: $color-secondary;
+      color: $color-base;
       font-size: 20px;
       font-weight: 400;
 
       &:hover,
       &:focus {
-        color: $color-secondary;
+        color: $color-base;
       }
 
       &--disable {
