@@ -33,7 +33,7 @@
           font-size: $typographic-base-font-size * 1.6817;
           margin-top: 0;
           @include margin-bottom(1);
-          @include line-height(1.5);
+          @include line-height(1);
         }
       }
     }
@@ -46,10 +46,6 @@
       max-width: $layout-post-width;
       margin-left: auto;
       margin-right: auto;
-    }
-
-    & img {
-      max-width: 100%;
     }
   }
 }
