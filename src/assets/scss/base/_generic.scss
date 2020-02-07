@@ -188,3 +188,11 @@ table {
     padding: 5px;
   }
 }
+
+.toc {
+  padding-bottom: 30px;
+
+  & p, ul, li {
+    margin: 0;
+  }
+}

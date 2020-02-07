@@ -128,6 +128,15 @@ module.exports = {
             resolve: "gatsby-remark-external-links",
             options: { rel: "noopener noreferrer" }
           },
+          {
+            resolve: `gatsby-remark-table-of-contents`,
+            options: {
+              exclude: ["Table of Contents", "目次"],
+              tight: false,
+              fromHeading: 1,
+              toHeading: 6
+            },
+          },
           "gatsby-remark-autolink-headers",
           "gatsby-remark-prismjs",
           //"gatsby-remark-copy-linked-files",

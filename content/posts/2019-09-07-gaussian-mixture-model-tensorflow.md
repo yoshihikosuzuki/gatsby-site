@@ -13,6 +13,11 @@ tags:
 description: "TensorFlow (version 1.4), TensorFlow Probability, Edwards2 の勉強のために、最尤推定とベイズ推定の各種解法で、潜在変数ありの場合に代表的な混合ガウスモデルを解く。"
 ---
 
+## 目次
+
+```toc
+```
+
 TensorFlow (version 1.4), TensorFlow Probability, Edwards2 の勉強のために、最尤推定とベイズ推定の各種解法で、潜在変数ありの場合に代表的な混合ガウスモデルを解く。潜在変数なしの[線形回帰はこちら](/posts/tensorflow-linear-regression)。
 
 [Jupyter Notebook はここ](https://nbviewer.jupyter.org/gist/yoshihikosuzuki/9d06ebb320789dd1a0c2389964a2d33e)。Plotly まわりのために [BITS](https://github.com/yoshihikosuzuki/BITS) という自作パッケージを使っているので、コードを動かす場合はインストールする。
