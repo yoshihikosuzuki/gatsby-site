@@ -137,6 +137,13 @@ module.exports = {
               toHeading: 6
             },
           },
+          {
+            resolve: 'gatsby-remark-graph',
+            options: {
+              language: 'mermaid',
+              theme: 'default'
+            }
+          },
           "gatsby-remark-autolink-headers",
           "gatsby-remark-prismjs",
           //"gatsby-remark-copy-linked-files",
@@ -236,6 +243,7 @@ module.exports = {
         fonts: [`lato\:400,400i,600,600i,700,700i`],
         display: "swap"
       }
-    }
+    },
+
   ]
 };
