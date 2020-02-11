@@ -2,10 +2,10 @@
 title: "役立つサイト"
 template: "article"
 slug: "useful-websites"
-description: "普段はほとんど訪れないけど、たまにとても必要になるサイトたち。"
+description: "普段はほとんど訪れないけど、たまにとても必要になるサイトたち。ブックマークに入れるほどではないけど、名前を覚えておくのも面倒なサイトたち。"
 ---
 
-普段はほとんど訪れないけど、たまにとても必要になるサイトたち。
+普段はほとんど訪れないけど、たまにとても必要になるサイトたち。ブックマークに入れるほどではないけど、名前を覚えておくのも面倒なサイトたち。
 
 ## バイオインフォマティクス
 
@@ -22,10 +22,16 @@ description: "普段はほとんど訪れないけど、たまにとても必要
 
 - [Mathcha](https://www.mathcha.io/editor)
   - 数式入りのちょっとした図を作るのに便利 (Keynote + LaTeXiT とかもよく使う)
+- [LaTeX Tables Generator](https://www.tablesgenerator.com/latex_tables)
+  - CSV -> LaTeX 等の表変換ツール
 - [web.dev](https://web.dev/)
   - Web サイトの改善点チェックや Web 技術の学習ができる
+- [Shields.io](https://shields.io/category/build)
+  - GitHub とかに表示するアイコン(バッジ)生成サービス
 
 ## その他
 
 - [Tokyo Art Beat](http://www.tokyoartbeat.com/)
   - 東京都内の美術館特別展やギャラリーの情報
+- [Markdown diagrams](https://shd101wyy.github.io/markdown-preview-enhanced/#/diagrams)
+  - Visual Studio Code の拡張機能の Markdown Preview Enhanced で使える diagram 一覧

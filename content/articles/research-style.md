@@ -181,14 +181,21 @@ export TERM='xterm-256color'
 export LANG='ja_JP.UTF-8'
 ```
 
-### Visual Studio Code ショートカットキー
+### Visual Studio Code
+
+- `$ code ファイル名`: ターミナルから vscode のタブでファイルを開く
+  - コマンドパレット -> `Shell Command: Install 'code' command in PATH` で `code`コマンドをインストールしておく
+
+#### ショートカットキー
 
 - `Command + Shift + P` or `Alt + X`: コマンドパレットを開く
 - `Alt + Shift + F`: 自動フォーマット
 - `` Ctrl + Shift + ` ``: ターミナルウィンドウを開閉
-- `Ctrl + @` (自分で設定): ターミナルとエディタを移動
-- `$ code ファイル名`: ターミナルから vscode のタブでファイルを開く
-  - コマンドパレット -> `Shell Command: Install 'code' command in PATH` で `code`コマンドをインストールしておく
+- `Ctrl + @` (ユーザ設定): ターミナルとエディタを移動
+  - `Terminal: Focus Terminal` コマンド、When = `!terminalFocus`; および
+  - `View: Focus Active Editor Group` コマンド、When = `terminalFocus`
+- `Ctrl + M` (ユーザ設定): ターミナルウィンドウを最大化・戻す
+  - `View: Toggle Maximized Panel` コマンド、When = `terminalFocus`
 
 ### Jupyter Notebook
 
