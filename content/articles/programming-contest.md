@@ -758,7 +758,7 @@ dijkstra(v, G, cost);
 LL min_cost_v_to_w = cost[w];
 ```
 
-- A\*アルゴリズム(優先度付き BFS、常に heuristic distance $\leq$ true distance なら最適解が求まる) [別記事](https://yoshihikosuzuki.github.io/2019/07/14/space-search.html)
+- A\*アルゴリズム(優先度付き BFS、常に heuristic distance $\leq$ true distance なら最適解が求まる) [別記事](/posts/search-2d-space)
 
 - ワーシャルフロイド法(各頂点から各頂点への最小コストと最短経路)
 

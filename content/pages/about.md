@@ -3,6 +3,8 @@ title: "About me"
 template: "page"
 ---
 
+(日本語は[こちら](/pages/about_jp))
+
 A graduate student majoring in bioinformatics at The University of Tokyo in Chiba &#x1f914;.
 
 ## Research theme
@@ -28,6 +30,8 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 
 ## Awards
 
+- Dean's Prize for the Ph.D. thesis, Graduate School of Frontier Sciences, The University of Tokyo, 2020
+- Excellent Research Award (Best award) for the Ph.D. thesis, Department of Computational Biology and Medical Sciences, The University of Tokyo, 2020
 - Excellent Research Award (Best award) for the Master's thesis, Department of Computational Biology and Medical Sciences, The University of Tokyo, 2017
 
 ## Publications
@@ -53,12 +57,3 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 - **<u>Y. Suzuki</u>**, S. Nishijima, Y. Furuta, W. Suda, K. Oshima, J. Taniguchi, J. Yoshimura, M. Hattori and S. Morishita. Meta-methylome analysis with SMRT sequencing revealed a diversity of DNA methylation motifs in uncultured human gut microbiomes. _The Biology of Genomes, CSHL Meeting_, New York. May 2016.
 - **<u>Y. Suzuki</u>**, S. Nishijima, Y. Furuta, W. Suda, K. Oshima, J. Taniguchi, J. Yoshimura, M. Hattori and S. Morishita. Meta-methylome of human gut microbiome using SMRT sequencing. _AGBT General Meeting_, Orlando, Florida. Feb 2016.
 - **<u>Y. Suzuki</u>**, J. Taniguchi, J. Yoshimura, K. Oshima, M. Hattori and S. Morishita. _De novo_ metagenome assembly using PacBio long reads. _The Biology of Genomes, CSHL Meeting_, New York. May 2015.
-
-## Skills
-
-- Python, C++, Bayesian statistics, string algorithm [Project example](https://github.com/yoshihikosuzuki/CentromereAssembly)
-- Basics of front-end Web programming (Node.js, React & Redux, Electron) [Project example](https://github.com/yoshihikosuzuki/PaperSorter)
-- AtCoder max rating: 1445, light blue (Jun 2019; id: yetnone)
-- TOEIC score 900 (Jun 2018)
-- Applied Information Technology Engineer
-- JUPA Psychology Proficiency Test Grade 1
