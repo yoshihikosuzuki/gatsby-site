@@ -32,16 +32,13 @@ Python --> シェルスクリプト
 
 ## 開発環境
 
-ローカル
-
-- macOS Catalina + zsh + Homebrew
-- [Alacritty](https://github.com/jwilm/alacritty) + [tmux](https://github.com/tmux/tmux)
-- [Visual Studio Code](https://code.visualstudio.com/#meet-intellisense)
-
-リモート
-
-- CentOS 7
-- Jupyter Notebook
+- ローカル
+  - macOS Catalina + zsh + Homebrew
+  - [Alacritty](https://github.com/jwilm/alacritty) + [tmux](https://github.com/tmux/tmux)
+  - [Visual Studio Code](https://code.visualstudio.com/#meet-intellisense)
+- リモート
+  - CentOS 7 + bash
+  - Jupyter Notebook
 
 コードや Jupyter Notebook は全てリモートに置いて Git(Hub) で管理して、編集・実行はローカルから行う。2020 年はターミナルから `ssh` -> Vim/Emacs で編集、ではなく、ローカルから直接、
 
@@ -55,6 +52,16 @@ Python --> シェルスクリプト
 - `$ brew doctor`: 定期的に実行して、表示される問題を解消する
 - `$ brew upgrade`: Homebrew 本体とパッケージのアップデート、こちらもたまに実行する
 - `$ brew install PACKAGE`, `$ brew uninstall PACKAGE`, `$ brew list`: よく使うのはこれ
+
+### リモートシェル設定
+
+- `$HOME/.bashrc`
+- `$HOME/.local` 以下に必要な実行ファイルやライブラリをインストール
+- 実行ファイルのパスを通すには `PATH`
+- コンパイル時に必要なライブラリのパスを通すには (`LDFLAGS` ではなく) `LIBRARY_PATH`
+- 実行時に必要なライブラリのパスを通すには `LD_LIBRARY_PATH`
+- C/C++ コンパイル時に必要なインクルードファイルのパスを通すには (`CPPFLAGS` ではなく) `CPATH`
+  - C だけ [C++] だけの場合は (`CFLAGS` [`CXXFLAGS`] ではなく) `C_INCLUDE_PATH` [`CPLUS_INCLUDE_PATH`]
 
 ### tmux 設定
 
@@ -267,7 +274,3 @@ Host github.com
     ServerAliveInterval 60
 ```
 
-### Python
-
-- [2to3](https://docs.python.org/ja/3/library/2to3.html)
-  - python2 のコードを python3 用に自動変換してくれる。完全ではないので追加で修正する必要もある。

@@ -166,7 +166,7 @@ $ trf <fasta> <match_score> <mismatch_penalty> <indel_penalty> 80 10 <min_score>
 ```
 
 - (Match, Mismatch, Delta) = (1, 1, 1) would be diff-like scoring system? (In that case, MinScore would be around 500?)
-  - because match rate in PacBio is ~0.75 and the length of a region detected by datander is $$\geq$$ 1 Kb, thus the total score would be $$\geq$$ 500
+  - because match rate in PacBio is ~0.75 and the length of a region detected by datander is $\geq$ 1 Kb, thus the total score would be $\geq$ 500
 - `-d -h` option outputs space-delimited file instead of htmls
 
 #### Output format of the data file

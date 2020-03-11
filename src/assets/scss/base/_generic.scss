@@ -25,7 +25,7 @@ h4,
 h5,
 h6 {
   font-family: $typographic-font-family;
-  font-weight: 400;
+  font-weight: 600;
 }
 
 h1 {
@@ -117,11 +117,18 @@ strong {
 
 ul {
   list-style: square;
-  @include margin-bottom(1);
+  //@include margin-bottom(1);
 
   & li {
-    padding: 0 5px;
-    margin-bottom: 10px;
+    padding: 0 3px;
+    @include margin-bottom(0.25);
+  }
+}
+
+ol {
+  & li {
+    padding: 0 3px;
+    @include margin-bottom(0.25);
   }
 }
 
@@ -193,7 +200,7 @@ table {
   padding-bottom: 30px;
 
   & p, ul, li {
-    margin: 0;
+    @include margin-bottom(0.25);
   }
 }
 

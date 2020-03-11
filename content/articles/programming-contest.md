@@ -5,6 +5,13 @@ slug: "competitive-programming-cpp-template"
 description: "マクロやコード片やアルゴリズムなど。"
 ---
 
+## 目次
+
+```toc
+```
+
+## リファレンス
+
 ### 型・マクロ
 
 ```cpp
@@ -191,6 +198,8 @@ if (index == -1) {
 | 先頭削除  |                     `X.pop();`                      |                      `X.pop();`                       |                                       `X.pop();`                                        |
 | 先頭参照  |                      `X.top()`                      |                      `X.front()`                      |                                        `X.top()`                                        |
 | iteration | `while (!X.empty()) { auto x = X.top(); X.pop(); }` | `while (!X.empty()) { auto x = X.front(); X.pop(); }` |                   `while (!X.empty()) { auto x = X.top(); X.pop(); }`                   |
+
+## コードスニペット
 
 ### 素数・約数
 
