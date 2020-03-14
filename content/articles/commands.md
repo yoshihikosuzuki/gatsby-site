@@ -17,15 +17,15 @@ description: "ずっと覚えているほど使用頻度が高くないコマン
 | ---------------------- | ---------------------------------- | ------------------------------------------------------------ |
 | `Command + Shift + P`  | コマンドパレットを開く             |                                                              |
 | `Alt + Shift + F`      | 自動フォーマット                   |                                                              |
-| `` Ctrl + Shift + ` `` | ターミナルウィンドウを開閉         | `Terminal: Focus Terminal` (when = `!terminalFocus`)<br>`View: Focus Active Editor Group` (when = `terminalFocus`) |
-| `Ctrl + M`             | ターミナルウィンドウを最大化・戻す | `View: Toggle Maximized Panel` (when = `terminalFocus`)      |
+| `` Ctrl + Shift + ` `` | ターミナルウィンドウを開閉         | `Terminal: Focus Terminal`<br>(when = `!terminalFocus`) と<br>`View: Focus Active Editor Group`<br>(when = `terminalFocus`) |
+| `Ctrl + M`             | ターミナルウィンドウを最大化・戻す | `View: Toggle Maximized Panel`<br>(when = `terminalFocus`)   |
 
 ### Homebrew
 
 | コマンド                                | 機能                                                         |
 | :-------------------------------------- | ------------------------------------------------------------ |
 | `brew doctor`                           | 定期的に実行して、表示される問題を解消する                   |
-| `brew upgrade`                          | Homebrew 本体とパッケージのアップデート、こちらもたまに実行する |
+| `brew upgrade`                          | Homebrew 本体とパッケージのアップデート<br>こちらもたまに実行する |
 | `brew [install|uninstall] パッケージ名` |                                                              |
 | `brew list`                             |                                                              |
 
@@ -42,4 +42,18 @@ description: "ずっと覚えているほど使用頻度が高くないコマン
 | `cargo atcoder new コンテスト名` | コンテストをダウンロード |
 | `cargo atcoder test 問題名`      | テスト実行               |
 | `cargo run --bin 問題名`         | 直接実行                 |
+
+### Jekyll (GitHub Pages)
+
+| コマンド                   | 機能                                             |
+| -------------------------- | ------------------------------------------------ |
+| `bundle [install|update]`  | Gemfile 中の依存関係をインストール[アップデート] |
+| `bundle exec jekyll serve` | ローカルでサイト実行                             |
+
+### Gatsby
+
+| コマンド                     | 機能                                                         |
+| ---------------------------- | ------------------------------------------------------------ |
+| `gatsby develop`             | ローカルでサイト実行                                         |
+| `gatsby build; gatsby serve` | ローカルでサイトをビルドして実行<br>より実際に近いサイトを生成できる |
 

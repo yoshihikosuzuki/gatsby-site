@@ -1,6 +1,6 @@
 ---
 title: Git & GitHub & GitLab 用の設定
-date: "2020-02-07"
+date: "2020-01-25"
 template: "post"
 draft: false
 slug: "git-github-settings"

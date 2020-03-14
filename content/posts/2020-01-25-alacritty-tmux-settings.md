@@ -19,7 +19,7 @@ description: "Mac 用の tmux と Alacritty の設定。"
 - tmux は `$ brew install tmux` でインストール
 - [Alacritty](https://github.com/alacritty/alacritty) は `$ brew cask install alacritty` でインストール
 
-## tmux 設定
+## tmux 設定
 
 - `$HOME/.tmux.conf`
 - 設定が反映されない場合は一度 `tmux kill-server` する
