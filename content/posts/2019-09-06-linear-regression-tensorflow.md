@@ -20,7 +20,7 @@ description: "TensorFlow (version 1.4), TensorFlow Probability, Edwards2 の勉�
 
 TensorFlow (version 1.4), TensorFlow Probability, Edwards2 の勉強のために、最尤推定とベイズ推定の各種解法で、潜在変数なしの場合に代表的な線形回帰を解く。潜在変数ありの[混合ガウス分布はこちら](/posts/tensorflow-gaussian-mixture)。
 
-[Jupyter Notebook はここ](https://nbviewer.jupyter.org/gist/yoshihikosuzuki/9d06ebb320789dd1a0c2389964a2d33e)。Plotly まわりのために [BITS](https://github.com/yoshihikosuzuki/BITS) という自作パッケージを使っているので、コードを動かす場合はインストールする。
+[Jupyter Notebook はここ](https://nbviewer.jupyter.org/gist/yoshihikosuzuki/411cba6a1eebfa56cdb9698740e30d49)。Plotly まわりのために [BITS](https://github.com/yoshihikosuzuki/BITS) という自作パッケージを使っているので、コードを動かす場合はインストールする。
 
 Tensorflow 関連のインポートは以下の通り。Eager Execution は使用しない。
 

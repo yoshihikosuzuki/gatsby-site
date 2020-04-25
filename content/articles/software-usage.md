@@ -5,6 +5,13 @@ slug: "software-usage"
 description: "主にバイオインフォのソフトウエアの使い方メモ。"
 ---
 
+## データ変換
+
+### Bax → fasta
+
+- SMRTLink: `bax2bam` → `bam2fasta`
+- DEXTRACTOR: `dextract`
+
 ## 配列アラインメント
 
 ### [Bowtie2](http://bowtie-bio.sourceforge.net/bowtie2/index.shtml)

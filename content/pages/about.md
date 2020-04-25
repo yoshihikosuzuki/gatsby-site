@@ -5,15 +5,19 @@ template: "page"
 
 (日本語は[こちら](/pages/about_jp))
 
-A graduate student majoring in bioinformatics at The University of Tokyo in Chiba &#x1f914;.
+A bioinformatician at The University of Tokyo in Chiba &#x1f914;.
 
 ## Research theme
 
 Genome sequence assembly is an inverse problem of reconstructing an original string (of the order of gigabyte in length) from a set of its substrings (of kilobyte) with observation errors. Its difficulty depends on the content of the original string, and my research theme is assembly of the most difficult class of sequences: i.e. repetitive sequences. I have been developing algorithms and software for more theorized and accurate assembly of repetitive sequences through interpreting the genome assembly problem with a framework of Bayesian statistics. Recent ongoing work on centromeric tandem repeat sequence assembly is here: [https://github.com/yoshihikosuzuki/CentromereAssembly](https://github.com/yoshihikosuzuki/CentromereAssembly).
 
+## Employment
+
+- Apr 2020 – : postdoc @ Morishita lab, Department of Computational Biology and Medical Sciences, Graduate School of Frontier Sciences, The University of Tokyo, Japan
+
 ## Education
 
-- Apr 2017 – Mar 2020 (expected): **Ph.D. (Science)** @ Department of Computational Biology and Medical Sciences, Graduate School of Frontier Sciences, The University of Tokyo, Japan
+- Apr 2017 – Mar 2020: **Ph.D. (Science)** @ Department of Computational Biology and Medical Sciences, Graduate School of Frontier Sciences, The University of Tokyo, Japan
   - Thesis title: **"Toward complete reconstruction of repetitive sequences in metagenome and centromere"** (supervisor: Prof. Shinichi Morishita)
 - Apr 2015 – Mar 2017: **M.S.** @ Department of Computational Biology and Medical Sciences, Graduate School of Frontier Sciences, The University of Tokyo, Japan
   - Thesis title: **"_De novo_ metagenome assembly and methylation-guided host-matching of mobile elements using SMRT sequencing"** (supervisor: Prof. Shinichi Morishita)
@@ -22,7 +26,7 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 
 ## Fellowships & Experience
 
-- Apr 2018 – Mar 2020 (expected): JSPS Research Fellowship for Young Scientists DC2
+- Apr 2018 – Mar 2020: JSPS Research Fellowship for Young Scientists DC2
 - Sep 2017 – Mar 2018: Visiting Ph.D. student at Prof. Gene Myers lab @ Max Planck Institute of Molecular Cell Biology and Genetics, Germany
 - Jul 2016 – Jun 2017: Intern @ National Graduate Institute for Policy Studies, Japan
 - Dec 2015 – Jan 2016 & Dec 2016 – Jan 2017: Teaching Assistant ("Basic Laboratory Work in Information Science") to Prof. Shinichi Morishita @ The University of Tokyo, Japan
