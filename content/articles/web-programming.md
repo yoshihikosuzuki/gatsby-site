@@ -9,13 +9,11 @@ description: "フロントエンド技術のまとめ場所。"
   <img src="https://raw.githubusercontent.com/kamranahmedse/developer-roadmap/master/img/frontend.png" width="800px">
 </div>
 
-([Roadmap to becoming a web developer in 2019](https://github.com/kamranahmedse/developer-roadmap) より引用)
-
-[2017 年の JavaScript 開発で知っておきたい用語集/リンク集](https://qiita.com/tomoyamachi/items/b398f35882fb57b975ad)
+↑ ([Roadmap to becoming a web developer](https://github.com/kamranahmedse/developer-roadmap) より引用)
 
 ## Javascript (ES2015 = ES6)
 
-- [イマドキの JavaScript の書き方 2018](https://qiita.com/shibukawa/items/19ab5c381bbb2e09d0d9)
+- [Qiita - ES2015(ES6) 入門](https://qiita.com/soarflat/items/b251caf9cb59b72beb9b)
 
 ## Node
 
@@ -27,12 +25,12 @@ description: "フロントエンド技術のまとめ場所。"
 - パッケージのインストール
   - `node_modules/`にインストールしたモジュールや実行ファイルには自動でパスが通るので、後述の npm scripts や`require()`ではプレフィックスは不要
 
-| コマンド                                | インストール先    | `package.json`との関係                                                                                                                                    | 用途                                |
-| --------------------------------------- | ----------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------- |
-| `$ npm install -g パッケージ名`         | 環境全体          | 依存関係には追加されない([が、記述すべき](https://qiita.com/Jxck_/items/efaff21b977ddc782971#%E3%83%84%E3%83%BC%E3%83%AB%E3%82%82-packagejson-%E3%81%A7)) | 基本的に使わない                    |
-| `$ npm install --save-dev パッケージ名` | `./node_modules/` | `devDependencies`にパッケージ名を追加                                                                                                                     | 開発時にだけ使用するパッケージ      |
-| `$ npm install --save パッケージ名`     | `./node_modules/` | `dependencies`にパッケージ名を追加                                                                                                                        | 実行時に(も)使用するパッケージ      |
-| `$ npm install`                         | `./node_modules/` | 記述されている依存パッケージを全てインストール                                                                                                            | 既存レポジトリを clone した場合など |
+| コマンド                                | インストール先    | `package.json`との関係                         | 用途                                |
+| --------------------------------------- | ----------------- | ---------------------------------------------- | ----------------------------------- |
+| `$ npm install -g パッケージ名`         | 環境全体          | 依存関係には追加されない(が、記述すべき)       |                                     |
+| `$ npm install --save-dev パッケージ名` | `./node_modules/` | `devDependencies`にパッケージ名を追加          | 開発時にだけ使用するパッケージ      |
+| `$ npm install --save パッケージ名`     | `./node_modules/` | `dependencies`にパッケージ名を追加             | 実行時に(も)使用するパッケージ      |
+| `$ npm install`                         | `./node_modules/` | 記述されている依存パッケージを全てインストール | 既存レポジトリを clone した場合など |
 
 - 現在インストールされているバージョンと最新のバージョンを確認
   - `$ npm outdated [-g|--save|--save-dev]`

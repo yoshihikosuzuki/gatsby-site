@@ -17,7 +17,6 @@ description: "ずっと覚えているほど使用頻度が高くないコマン
 | ------------------------------ | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
 | `Command + K` → `Z`            | Zen mode                           |
 | `Command + Shift + P`          | コマンドパレットを開く             |                                                                                                                             |
-| `Alt + Shift + F`              | 自動フォーマット                   |                                                                                                                             |
 | <code>Ctrl + Shift + \`</code> | ターミナルウィンドウを開閉         | `Terminal: Focus Terminal`<br>(when = `!terminalFocus`) と<br>`View: Focus Active Editor Group`<br>(when = `terminalFocus`) |
 | `Ctrl + M`                     | ターミナルウィンドウを最大化・戻す | `View: Toggle Maximized Panel`<br>(when = `terminalFocus`)                                                                  |
 
@@ -35,14 +34,6 @@ description: "ずっと覚えているほど使用頻度が高くないコマン
 | コマンド            | 機能                     |
 | ------------------- | ------------------------ |
 | `cpan モジュール名` | モジュールをインストール |
-
-### [cargo-atcoder](https://github.com/tanakh/cargo-atcoder)
-
-| コマンド                         | 機能                     |
-| -------------------------------- | ------------------------ |
-| `cargo atcoder new コンテスト名` | コンテストをダウンロード |
-| `cargo atcoder test 問題名`      | テスト実行               |
-| `cargo run --bin 問題名`         | 直接実行                 |
 
 ### Jekyll (GitHub Pages)
 
