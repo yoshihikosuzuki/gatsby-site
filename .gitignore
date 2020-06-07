@@ -8,5 +8,3 @@ npm-debug.log
 gatsby-starter-lumen.iml
 .env
 .DS_Store
-yarn.lock
-package-lock.json
