@@ -21,7 +21,7 @@ template: "page"
 
 - 特任研究員 @ 東京大学大学院新領域創生科学研究科メディカル情報生命専攻森下研究室
 
-## 学歴 & 研究歴
+## 学歴
 
 #### 2017 年 4 月 – 2020 年 3 月
 
@@ -41,7 +41,7 @@ template: "page"
 - 論文題目: **"Metagenome assembly using PacBio long read (PacBio ロングリードを用いたメタゲノムアセンブリ)"**
 - 指導教官: 森下真一教授
 
-## 奨学金 & 経歴
+## フェローシップ
 
 #### 2018 年 4 月 – 2020 年 3 月
 
@@ -75,7 +75,7 @@ template: "page"
 
 - <u>Suzuki, Y.</u>, Nishijima, S., Furuta, Y., Yoshimura, J., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Long-read metagenomic exploration of extrachromosomal mobile genetic elements in the human gut. _Microbiome_ **7**, 119 (2019).
 
-### 本の記事
+### その他
 
 - <u>鈴木慶彦</u>、西嶋傑、森下真一、ロングリードメタゲノミクス、ヒトマイクロバイオーム Vol.2、NTS (2020 年)
 - <u>鈴木慶彦</u>、森下真一、PacBio ロングリードを用いたメタゲノム解析、実験医学別冊　メタゲノム解析　実験ハンドブック、羊土社 (2016 年)

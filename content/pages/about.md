@@ -41,7 +41,7 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 - Thesis title: **"Metagenome assembly using PacBio long read"**
 - Supervisor: Prof. Shinichi Morishita
 
-## Fellowships & Experience
+## Fellowships
 
 #### Apr 2018 – Mar 2020
 
