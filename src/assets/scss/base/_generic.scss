@@ -185,7 +185,8 @@ figcaption {
 table {
   border-collapse: collapse;
 
-  & thead, tbody {
+  & thead,
+  tbody {
     border: solid 2px #aaa;
   }
 
@@ -199,11 +200,17 @@ table {
 .toc {
   padding-bottom: 30px;
 
-  & p, ul, li {
+  & p,
+  ul,
+  li {
     @include margin-bottom(0.25);
   }
 }
 
 .mermaid {
   text-align: center;
+}
+
+code[class*="language-"] {
+  margin: 0em 0.2em;
 }
