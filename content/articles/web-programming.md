@@ -15,6 +15,10 @@ description: "フロントエンド技術のまとめ場所。"
 
 - [Qiita - ES2015(ES6) 入門](https://qiita.com/soarflat/items/b251caf9cb59b72beb9b)
 
+## CSS
+
+- [CSS Selectors Cheatsheet](https://appletree.or.kr/quick_reference_cards/CSS/CSS%20selectors%20cheatsheet.pdf)
+
 ## Node
 
 ### npm (Node Package Manager)
