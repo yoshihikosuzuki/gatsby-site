@@ -12,20 +12,24 @@ description: 'Myers, E. W. A Whole-Genome Assembly of Drosophila. Science 287, 2
 
 ほとんど自分用メモ。[Myers, E. W. A Whole-Genome Assembly of Drosophila. _Science_ 287, 2196–2204 (2000)](https://science.sciencemag.org/content/287/5461/2196) にある "A-statistic" について。
 
-- Given: $N$ 個の (途切れていない) リード
-- Given: 長さ $G$ bp のゲノム
-- Given: (平均) リード深度 $d$
+- Given: ゲノム長 $G$ bp
+- Given: (途切れていない) リードの総数 $N$
+- Given: 長さ $l$ bp で $k$ 個のリードからなるコンティグ $c$
+- Def: コンティグ $c$ の「重複度」$r\in\mathbb{N}$ (= その配列がゲノム中に何回現れるか = リピートのコピー何個をまとめたものか、を表す値)
 
-このとき、「平均リード深度が $d$ のときに $\rho$ bp の区間内から $k$ 個のリードが開始する確率」= 「長さ $\rho$ bp のコンティグが $k$ 個のリードから構成される確率」を $p(k\vert d)$ と書くと、
-
-$$
-p(k\vert d)={\rm Poisson}\left(k;\frac{d\rho N}{G}\right)
-$$
-
-となる。そして、これをもとにオッズ比
+このとき、$p(k\vert r):=$「コンティグ $c$ が $k$ 個のリードから構成される確率」＝「$l$ bp の区間 ($\times r$ 個) 内で $k$ 個のリードが開始する確率」は、
 
 $$
-\frac{p(k\vert d=1)}{p(k\vert d=2)}
+\begin{aligned}
+p(k\vert r)&={\rm Poisson}\left(k;\frac{lrN}{G}\right) \\
+&=\frac{1}{k!}\left(\frac{lrN}{G}\right)^k\exp\left(-\frac{lrN}{G}\right)
+\end{aligned}
 $$
 
-の log を取った値が 10 以上ならその $\rho$ bp の区間 (= コンティグ) はユニークであるとする、という話。これはコンティグがリピートを含んでいるかどうかの判定なので、アセンブリの "正しさ" はまた別問題となる (A-statistic の値が小さくてもアセンブリが正しいこともあるし、大きくてもミスアセンブリがあることもある)。
+となる。そしてこれをもとに、重複度 1 の場合 (= ユニーク配列) と 2 の場合 (= リピート配列; コピー数が 3 以上の場合もこちらの方が近くなる) の log オッズ比
+
+$$
+\log\frac{p(k\vert r=1)}{p(k\vert r=2)}= \frac{lN}{G}\log e-k\log 2
+$$
+
+の値が 10 以上なら、その $l$ bp の区間 (= コンティグ) はユニークであるとする、という話。これはコンティグが全体としてリピートっぽいかどうかの判定なので、アセンブリの "正しさ" はまた別問題となる (A-statistic の値が小さくてもアセンブリが正しいこともあるし、大きくてもミスアセンブリがあることもある)。
