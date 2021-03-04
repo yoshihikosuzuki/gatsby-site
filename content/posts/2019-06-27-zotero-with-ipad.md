@@ -1,6 +1,6 @@
 ---
 title: Zotero で管理している PDF を iPad/モバイル端末から閲覧・編集する
-date: "2019-06-27"
+date: "2021-03-04"
 template: "post"
 draft: false
 slug: "zotero-with-ipad"
@@ -11,30 +11,36 @@ tags:
 description: "なるべく特定のソフトウエアに依存せずに、Zotero をパソコンとモバイル端末の両方でどう使うか。"
 ---
 
-文献管理ソフトの 1 つであるところの [Zotero](https://www.zotero.org/) は PC 版だと使いやすいのだけど、別の端末に同期させようとすると少々面倒な話になってくる。
+文献管理ソフトの 1 つであるところの [Zotero](https://www.zotero.org/) は PC 版だと使いやすいのだけど、別の端末、特に Zotero 公式アプリが (まだ) 提供されていないモバイル端末などと同期させようとすると少々面倒な話になってくる。Zotero が他の文献管理ソフトと比べて
 
 ## 前提
 
-- PC (Mac, Windows)で Zotero を使って論文などの PDF を管理している
-- iPad などのタブレットやモバイル端末からもその PDF にアクセスしたい
-- Zotero Storage (アカウントを作ると 300MB まで無料の同期用クラウドストレージがもらえるやつ) を使わない
-- 特定の PDF リーダに対してこだわりがない、むしろデバイスのデフォルトの PDF リーダを使いたい
+1. PC (Mac, Windows) で Zotero を使って論文などの PDF を管理している
+2. iPad などのタブレットやモバイル端末からもその PDF (+ アノテーション) にアクセスしたい
+3. Zotero Storage (アカウントを作ると 300MB まで無料の同期用クラウドストレージがもらえるやつ) を使わない
+4. 特定の PDF リーダに対してこだわりがない、むしろデバイスのデフォルトの PDF リーダを使いたい
 
-最後の 2 つの条件の理由は、一言で言うとつまり「特定のソフトウエアに依存したくない」ということだ。Zotero Storage を使うと確かに楽かもしれないが、Zotero Storage のサービスの及ぶ範囲でしかファイルを共有することはできない(これはクラウドサービス全般に対して言える)。また、Zotero 以外の文献管理ソフトにありがちな内蔵 PDF リーダも、確かに便利なのかもしれないが、その特定のソフトに対する依存性を強めてしまい(注釈の形式など)、ふと別のデバイスでも使いたくなった時にサポートしていない、なんてことになりがちだ。
+最後の 2 つの条件の理由は、一言で言うと「特定のソフトウエアに依存したくない」ということだ。つまり、
 
-## Zotfile + Dropbox + Acrobat Reader
+- Zotero Storage を使うと確かに楽かもしれないが、Zotero Storage のサービスの及ぶ範囲でしかファイルを共有することはできない (しかも現実的な量のファイルを同期するには有料となる)
+- Zotero 以外の文献管理ソフトにありがちな内蔵 PDF リーダも、確かに便利なのかもしれないが、その特定のソフトに対する依存性を強めてしまい (注釈の形式など)、ふと別のデバイスでも使いたくなった時にサポートしていない (もしくはわざわざアノテーション付き PDF を別に出力してそれを移動する必要がある)、なんてことになりがち
 
-まず、Zotero Storage を使わないので、別の何らかの方法で PC 上のファイルを共有する必要がある。ファイル共有といえば定番の Dropbox ということでここでは挙げたが、要は共有したいデバイスの PDF リーダからファイルにアクセスできるようなサービスであれば何でもよい。
+## Zotfile + Google Drive + Acrobat Reader
 
-じゃあ単純に Zotero Data Directory Location (PC 上で Zotero のデータが保存される場所) を Dropbox の支配下に置くだけで済むのか簡単じゃん、と言うと残念ながらそうはいかない。この Data Directory Location にある`storage`というディレクトリを見れば分かるのだが、Zotero はそれぞれのアイテムを人工的なハッシュ値を名前に持つディレクトリに入れて管理している。Zotero 公式のファイル同期サービスを使わない限り PC 版のようにこれを綺麗に並べることはできず(特に暗号化されているわけでもなさそうなので SQL を読めばいけるかもしれないが)、この無機質な名前のディレクトリを 1 つ 1 つ開いて目的のファイルを探す羽目になる。それは非常にいただけない。
+まず、Zotero Storage を使わないので、別の何らかの方法で PC 上のファイルを共有する必要がある。ここでは Google Drive を挙げているが、以下の 3 点を満たしていればどんなものでもよい：
 
-そこで、有名な [Zotfile](http://zotfile.com/) を使って、PC 版 GUI のコレクションの構造と名前を保ったままファイルを管理できるようにする。具体的には、[手順](http://zotfile.com/#how-to-install--set-up-zotfile)に従って Zotfile をインストールした後、`Tools -> Zotfile Preferences -> General Settings`から`Custom Location`を Dropbox が管理できるディレクトリ名で指定して、`Use subfolder defined by`を`/%c`にしてチェックを入れる。そして、Zotero 本体の`Preferences -> Advanced -> Files and Folders`でも`Base directory`を同じ Dropbox のディレクトリで指定する(Data Directory Location はそのまま)。
+- ファイルを保存するための十分な容量がある
+- パソコン上のフォルダの中身を自動で同期してくれる
+- モバイル側で使いたい PDF リーダ (ここでは Acrobat Reader) がそのストレージサービスにアクセスできる (Acrobat Reader なら OneDrive, Google Drive, Dropbox が簡単に紐付けできる)
 
-これで、PC 版 Zotero でモバイルデバイスと同期したいアイテムを右クリック -> `Manage Attachments -> Rename Attachments`で、Data Directory Location から上で指定した Custom Location に「コレクションの名前と構造を保ったまま」ファイルが移動するようになる。注意点としては、
+そして、Zotero とクラウドストレージサービスをつなげるために [Zotfile](http://zotfile.com/) が必要になる。具体的なインストールと設定のやり方は [公式のインストールマニュアル](http://zotfile.com/#how-to-install--set-up-zotfile) や [このガイド](https://www.researchgate.net/publication/325828616_Tutorial_The_Best_Reference_Manager_Setup_Zotero_ZotFile_Cloud_Storage) に従う。ただし、`Zotfile Preferences -> General Settings -> Use subfolder defined by` の設定だけは私はガイドと違って `/%c` にしている (こうすると Google Drive 等に同期されるファイルのディレクトリ構造を Zotero のコレクション構造と同じにできる)。これを済ませると、
 
-- 同期したいファイルをいちいち右クリック -> … しないといけない(新しく Zotero に追加したファイルは Custom Location ではなくまず Data Directory Location の方に置かれる)
-- [ここ](https://forums.zotero.org/discussion/74208/zotfile-not-scanning-folder-for-new-files)では Chrome の拡張機能の Zotero Connector であれば追加時に自動で Custom Location の方に置かれる、と言っているのだが、どうも私の環境だとできない
+1. [各アイテムについて一度だけ] PC の Zotero で同期したいアイテムを選択して、右クリック → `Manage Attachments` → `Rename Attachments` (一度だけでよいが複数回やっても構わないので、アイテムを全選択して全部一気にやると楽)
+2. iPad で Acrobat Reader から Google Drive 経由で同期されたファイルを開く
 
-とはいえ元の状況よりは圧倒的に便利になるので(読みたいものだけ同期できるとポジティブに考えれば逆に良いかも？)、私はひとまずこれで満足している。
+ということができるようになって、PC/iPad のどちらでアノテーションを付けても、特に何もすることもなくもう片方に反映されるようになる (クラウドサービスの同期が完了するまでのタイムラグはある)。ただし、注意点があって、
 
-ファイルを Custom Location に移動した後は、Dropbox で共有して別端末でそれを任意の PDF リーダで開くだけ。Adobe Acrobat Reader のような標準的かつ無料のビューワを使えば、どのデバイスから注釈などを付けたとしても同期しやすいだろう。(ちなみに私は Mac では動作の非常に軽いプレビューをデフォルトの PDF リーダに設定している。これでも同じように閲覧・編集できる。)
+- 同期するアイテムは親アイテム (=メタデータ) を持っている必要がある (一覧表示で左端に三角マークがあれば持っている)。もしなければ、右クリック → `Create Parent Item...` で親アイテムを作っておく
+- Zotfile で `Use subfolder defined by` を `/%c` (上述) にしている場合、同じアイテムが複数コレクションに属していると、どちらか一つのフォルダにしか追加することができず、アイテムを同期するたびにどのフォルダを選ぶか聞かれるので非常に面倒。なので、すべてのアイテムはそれぞれ1つのコレクションだけに属するようにして、複数のコレクションにまたがるアイテムはタグを使って管理する (ちなみに Zotero の左下にはタグの一覧を表示することができる)
+
+これらに気をつければ、(いちいち右クリック → `Rename Attachments` は面倒なので正直どうにかしたいものの) 十分快適にデバイス間同期ができる。無料、高速、なるべく簡潔、を同時に満たす現時点で唯一のやり方だと思う。

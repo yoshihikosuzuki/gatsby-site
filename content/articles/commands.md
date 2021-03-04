@@ -2,7 +2,7 @@
 title: 使用頻度の低いコマンド置き場
 template: "article"
 slug: "commands"
-description: "ずっと覚えているほど使用頻度が高くないコマンドやショートカットキーをメモ代わりに書き留めておく場所。"
+description: "たまに必要になるけど覚えているほど使用頻度が高くないコマンドやショートカットキーをメモ代わりに書き留めておく場所。"
 ---
 
 ## 目次
@@ -10,15 +10,6 @@ description: "ずっと覚えているほど使用頻度が高くないコマン
 ```toc
 
 ```
-
-### Visual Studio Code
-
-| ショートカットキー             | 機能                               | ユーザ設定コマンド名                                                                                                        |
-| ------------------------------ | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------- |
-| `Command + K` → `Z`            | Zen mode                           |
-| `Command + Shift + P`          | コマンドパレットを開く             |                                                                                                                             |
-| <code>Ctrl + Shift + \`</code> | ターミナルウィンドウを開閉         | `Terminal: Focus Terminal`<br>(when = `!terminalFocus`) と<br>`View: Focus Active Editor Group`<br>(when = `terminalFocus`) |
-| `Ctrl + M`                     | ターミナルウィンドウを最大化・戻す | `View: Toggle Maximized Panel`<br>(when = `terminalFocus`)                                                                  |
 
 ### Homebrew
 
