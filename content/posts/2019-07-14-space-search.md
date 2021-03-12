@@ -1,5 +1,5 @@
 ---
-title: 二次元平面の少し複雑な探索
+title: 二次元平面の少し複雑な探索と A* (A-star) アルゴリズム
 date: "2019-07-14"
 template: "post"
 draft: false
@@ -129,9 +129,9 @@ int main() {
 }
 ```
 
-### A\*アルゴリズム
+### A\* アルゴリズム
 
-[A\*アルゴリズム](https://www.redblobgames.com/pathfinding/a-star/introduction.html)を使ってより効率的に解く。A\*アルゴリズムは
+[A\* アルゴリズム](https://www.redblobgames.com/pathfinding/a-star/introduction.html)を使ってより効率的に解く。A\* アルゴリズムは
 
 - **開始位置からの距離** $g$ に基づいた優先度付き Dijkstra 法 (最適保証あり) と
 - **目的地までの推定距離** $h$ に基づいた優先度付き貪欲 BFS (最適保証なし; 推定距離なので)
