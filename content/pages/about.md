@@ -84,6 +84,7 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 
 ### International Conferences
 
+- **<u>Suzuki, Y.</u>** & Myers, E. W. Accurate k-mer classification using read profiles. _Biodiversity Genomics 2021_ (Sep 2021).
 - **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Highly diversified metamethylome and metamobilome in human gut metagenomes. _SMRTLeiden_, Leiden, Netherland. (May 2017).
 - **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Metagenome, metamobilome and meta-methylome of human gut flora uncovered by SMRT sequencing. _AGBT General Meeting_, Hollywood, Florida. (Feb 2017).
 
