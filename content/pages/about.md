@@ -9,11 +9,15 @@ A bioinformatician.
 
 ## Research theme
 
-Genome sequence assembly is an inverse problem of reconstructing an original string (of the order of gigabyte in length) from a set of its substrings (of kilobyte) with observation errors. Its difficulty depends on the content of the original string, and the main theme in my doctoral research was assembly of the most difficult class of sequences: i.e. repetitive sequences. I have been developing algorithms and software for more theorized and accurate assembly of repetitive sequences through interpreting the genome assembly problem with a framework of Bayesian statistics. A recent ongoing work on tandem repeat sequence assembly is here: [https://github.com/yoshihikosuzuki/complex-sat-asm](https://github.com/yoshihikosuzuki/complex-sat-asm).
+Genome sequence assembly is an inverse problem of reconstructing an original string (of the order of gigabyte in length) from a set of its very short substrings (of kilobyte) that contain observation errors. The difficulty of a genome assembly task depends on the content of the original string, and the main theme in my doctoral research was assembly of the most difficult class of sequences: i.e. repetitive sequences. More recently, I have been working both on development of fundamental computational methods/programs for more accurate and faster genome assembly and on practical assembly projects of several (non-model) organisms.
 
 ## Employment
 
-#### Jul 2020 –
+#### Apr 2022 –
+
+- Postdoc @ Morishita lab, The University of Tokyo
+
+#### Jul 2020 – Mar 2022
 
 - Postdoc @ Myers Unit, Okinawa Institute of Science and Technology Graduate University
 
