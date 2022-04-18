@@ -1,6 +1,8 @@
 # Static site
 
-with
+**NOTE (2022-04-18)**: 現在の Gatsby のバージョンは v4 だが、このサイトは v2 を使い続けている。管理者のフロントエンド力の足りなさにより、v4 にアップグレードできないでいる。Netflify でのデプロイは `.nvmrc` で古い Node のバージョンを指定することで動かし続けているが、ローカルでは `$ gatsby [develop|build]` できなくなっている。他の (自力で管理する必要のない) サービスに移行するべきか。。？
+
+## 使用サービス
 
 - [Gatsby](https://www.gatsbyjs.org/)
 - [gatsby-starter-lumen](https://github.com/alxshelepenok/gatsby-starter-lumen)
