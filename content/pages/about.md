@@ -33,6 +33,12 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 - Thesis title: **"Toward complete reconstruction of repetitive sequences in metagenome and centromere"**
 - Supervisor: Prof. Shinichi Morishita
 
+#### Sep 2017 – Mar 2018
+
+- Visiting Ph.D. student @ Max Planck Institute of Molecular Cell Biology and Genetics
+- Research theme: Sequence assembly of centromeres in Drosophila
+- Advisor: Prof. Gene Myers
+
 #### Apr 2015 – Mar 2017
 
 - **M.S.** @ Department of Computational Biology and Medical Sciences, The University of Tokyo
@@ -45,19 +51,15 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 - Thesis title: **"Metagenome assembly using PacBio long read"**
 - Supervisor: Prof. Shinichi Morishita
 
-## Fellowships
+## Fellowships & Experiences
 
 #### Apr 2018 – Mar 2020
 
 - JSPS Research Fellowship for Young Scientists DC2
 
-#### Sep 2017 – Mar 2018
-
-- Visiting Ph.D. student @ Myers lab, Max Planck Institute of Molecular Cell Biology and Genetics
-
 #### Jul 2016 – Jun 2017
 
-- Intern @ National Graduate Institute for Policy Studies
+- Intern (Software development & Data analysis) @ National Graduate Institute for Policy Studies
 
 #### Dec 2015 – Jan 2016 & Dec 2016 – Jan 2017
 
@@ -65,7 +67,7 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 
 #### Apr 2015 – Mar 2018
 
-- JSPS Program for Leading Graduate Schools scholarship
+- JSPS Program for Leading Graduate Schools Scholarship ("Global Leader Program for Social Design and Management", GSDM)
 
 ## Awards
 
@@ -77,18 +79,18 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 
 ### Journals
 
-- アコヤガイ
+- Takeuchi, T., <u>Suzuki, Y. (joint-first)</u>, Watabe, S., Nagai, K., Masaoka, T., Fujie, M., Kawamitsu, M., Satoh, N., & Myers, E. W. A high-quality, haplotype-phased genome reconstruction reveals unexpected haplotype diversity in a pearl oyster. (Under review)
 - <u>Suzuki, Y.</u>, Nishijima, S., Furuta, Y., Yoshimura, J., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Long-read metagenomic exploration of extrachromosomal mobile genetic elements in the human gut. _Microbiome_ **7**, 119 (2019).
 
 ### Conference Proceedings
 
-- <u>Suzuki, Y.</u> & Myers, G. Accurate k-mer classification using read profiles. _22nd International Workshop on Algorithms in Bioinformatics, WABI 2022_ (2022).
+- <u>Suzuki, Y.</u> & Myers, G. Accurate k-mer classification using read profiles. _22nd International Workshop on Algorithms in Bioinformatics (WABI)_, Potsdam, Germany. (2022, Accepted).
 
-### Book Chapters
+### Magazine Articles
 
-- 羊土社
-- <u>Suzuki, Y.</u>, Nishijima, S., & Morishita, S. Long-read metagenomcis. in _Human Microbiome Vol.2_ (ed. Hattori, M.) (NTS, Inc., 2020).
-- <u>Suzuki, Y.</u> & Morishita, S. Metagenome analysis using PacBio long reads. in _Experimental Medicine Separate Volume_ (ed. Hattori, M.) 149–155 (Yodosha, 2016).
+- <u>Suzuki, Y.</u> & Morishita, S. The success in completing a human genome and its significance. _Experimental Medicine_ **40**(13) (Yodosha, 2022).
+- <u>Suzuki, Y.</u>, Nishijima, S., & Morishita, S. Long-read metagenomcis. _Human Microbiome Vol. 2_ (ed. Hattori, M.) (NTS, 2020).
+- <u>Suzuki, Y.</u> & Morishita, S. Metagenome analysis using PacBio long reads. _Experimental Medicine Separate Volume_ (ed. Hattori, M.), 149–155 (Yodosha, 2016).
 
 ## Oral Presentations (presenter in bold style)
 
@@ -111,8 +113,8 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 
 ### International Conferences
 
-- Takeuchi, T., **<u>Suzuki, Y.</u>**, Watabe, S., Nagai, K., Masaoka, T., Fujie, M., Kawamitsu, M., Satoh, N., & Myers, E. W. A high-quality, haplotype-phased genome reconstruction reveals unexpected haplotype diversity in a pearl oyster. _International Genome Graph Symposium (IGGSy) 2022_, Ascona, Switzerland. (Jul 2022).
-- **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Hattori, M., & Morishita, S. _De novo_ metagenome assembly and methylome of the human gut microbiome using SMRT sequencing. _The Biology of Genomes, CSHL Meeting_, New York. (May 2017).
-- **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Taniguchi, J., Yoshimura, J., Hattori, M., & Morishita, S. Meta-methylome analysis with SMRT sequencing revealed a diversity of DNA methylation motifs in uncultured human gut microbiomes. _The Biology of Genomes, CSHL Meeting_, New York. (May 2016).
+- Takeuchi, T., **<u>Suzuki, Y.</u>**, Watabe, S., Nagai, K., Masaoka, T., Fujie, M., Kawamitsu, M., Satoh, N., & Myers, E. W. A high-quality, haplotype-phased genome reconstruction reveals unexpected haplotype diversity in a pearl oyster. _International Genome Graph Symposium (IGGSy)_, Ascona, Switzerland. (Jul 2022).
+- **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Hattori, M., & Morishita, S. _De novo_ metagenome assembly and methylome of the human gut microbiome using SMRT sequencing. _The Biology of Genomes, Cold Spring Harbor Laboratory (CSHL) Meeting_, New York. (May 2017).
+- **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Taniguchi, J., Yoshimura, J., Hattori, M., & Morishita, S. Meta-methylome analysis with SMRT sequencing revealed a diversity of DNA methylation motifs in uncultured human gut microbiomes. _The Biology of Genomes, Cold Spring Harbor Laboratory (CSHL) Meeting_, New York. (May 2016).
 - **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Taniguchi, J., Yoshimura, J., Hattori, M., & Morishita, S. Meta-methylome of human gut microbiome using SMRT sequencing. _Advances in Genome Biology and Technology (AGBT) General Meeting_, Orlando, Florida. (Feb 2016).
-- **<u>Suzuki, Y.</u>**, Taniguchi, J., Yoshimura, J., Oshima, K., Hattori, M., & Morishita, S. _De novo_ metagenome assembly using PacBio long reads. _The Biology of Genomes, CSHL Meeting_, New York. (May 2015).
+- **<u>Suzuki, Y.</u>**, Taniguchi, J., Yoshimura, J., Oshima, K., Hattori, M., & Morishita, S. _De novo_ metagenome assembly using PacBio long reads. _The Biology of Genomes, Cold Spring Harbor Laboratory (CSHL) Meeting_, New York. (May 2015).
