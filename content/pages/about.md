@@ -5,11 +5,11 @@ template: "page"
 
 (日本語は[こちら](/pages/about_jp))
 
-A bioinformatician.
+A bioinformatician (or computational biologist).
 
 ## Research theme
 
-Genome sequence assembly is an inverse problem of reconstructing an original string (of the order of gigabyte in length) from a set of its very short substrings (of kilobyte) that contain observation errors. The difficulty of a genome assembly task depends on the content of the original string, and the main theme in my doctoral research was assembly of the most difficult class of sequences: i.e. repetitive sequences. More recently, I have been working both on development of fundamental computational methods/programs for more accurate and faster genome assembly and on practical assembly projects of several (non-model) organisms.
+Genome sequence assembly is an inverse problem of reconstructing an original string (of the order of gigabyte in length) from a set of its very short substrings (of kilobyte) that contain observation errors. The difficulty of a genome assembly task depends on the content of the original string, and the main theme in my doctoral research was assembly of repetitive sequences in centromeres and metagenomes. More recently, I have been working both on development of fundamental computational methods/programs for more accurate and efficient genome assembly and on practical assembly projects of several (model/non-model) organisms.
 
 ## Employment
 
@@ -77,10 +77,16 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 
 ### Journals
 
+- アコヤガイ
 - <u>Suzuki, Y.</u>, Nishijima, S., Furuta, Y., Yoshimura, J., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Long-read metagenomic exploration of extrachromosomal mobile genetic elements in the human gut. _Microbiome_ **7**, 119 (2019).
+
+### Conference Proceedings
+
+- <u>Suzuki, Y.</u> & Myers, G. Accurate k-mer classification using read profiles. _22nd International Workshop on Algorithms in Bioinformatics, WABI 2022_ (2022).
 
 ### Book Chapters
 
+- 羊土社
 - <u>Suzuki, Y.</u>, Nishijima, S., & Morishita, S. Long-read metagenomcis. in _Human Microbiome Vol.2_ (ed. Hattori, M.) (NTS, Inc., 2020).
 - <u>Suzuki, Y.</u> & Morishita, S. Metagenome analysis using PacBio long reads. in _Experimental Medicine Separate Volume_ (ed. Hattori, M.) 149–155 (Yodosha, 2016).
 
@@ -88,20 +94,25 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 
 ### International Conferences
 
-- **<u>Suzuki, Y.</u>** & Myers, E. W. Accurate k-mer classification using read profiles. _Biodiversity Genomics 2021_ (Sep 2021).
+- **<u>Suzuki, Y.</u>** & Myers, E. W. Accurate k-mer classification using read profiles. _Biodiversity Genomics 2021_, Online Conference. (Sep 2021).
 - **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Highly diversified metamethylome and metamobilome in human gut metagenomes. _SMRTLeiden_, Leiden, Netherland. (May 2017).
-- **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Metagenome, metamobilome and meta-methylome of human gut flora uncovered by SMRT sequencing. _AGBT General Meeting_, Hollywood, Florida. (Feb 2017).
+- **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Metagenome, metamobilome and meta-methylome of human gut flora uncovered by SMRT sequencing. _Advances in Genome Biology and Technology (AGBT) General Meeting_, Hollywood, Florida. (Feb 2017).
 
 ### Domestic Conferences
 
 - **<u>Suzuki, Y</u>**. Genome assembly technologies and gut microbiome analysis using long reads. _The 164th Committee on Genome Technology_, Tokyo, Japan. (Apr 2018).
 - **Ikeuchi, K.**, <u>Suzuki, Y.</u>, & Hara, Y. Measuring the value of innovations using press releases of companies. _The Japanese Economic Association_, Kyoto, Japan. (Jun 2017).
 
+### Others
+
+- **<u>Suzuki, Y</u>** & Myers, E. W. Accurate k-mer classification using read profiles. _OIST-UT Genomics Research Seminar_, Okinawa, Japan. (Mar 2022).
+
 ## Poster Presentations (presenter in bold style)
 
 ### International Conferences
 
+- Takeuchi, T., **<u>Suzuki, Y.</u>**, Watabe, S., Nagai, K., Masaoka, T., Fujie, M., Kawamitsu, M., Satoh, N., & Myers, E. W. A high-quality, haplotype-phased genome reconstruction reveals unexpected haplotype diversity in a pearl oyster. _International Genome Graph Symposium (IGGSy) 2022_, Ascona, Switzerland. (Jul 2022).
 - **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Hattori, M., & Morishita, S. _De novo_ metagenome assembly and methylome of the human gut microbiome using SMRT sequencing. _The Biology of Genomes, CSHL Meeting_, New York. (May 2017).
 - **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Taniguchi, J., Yoshimura, J., Hattori, M., & Morishita, S. Meta-methylome analysis with SMRT sequencing revealed a diversity of DNA methylation motifs in uncultured human gut microbiomes. _The Biology of Genomes, CSHL Meeting_, New York. (May 2016).
-- **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Taniguchi, J., Yoshimura, J., Hattori, M., & Morishita, S. Meta-methylome of human gut microbiome using SMRT sequencing. _AGBT General Meeting_, Orlando, Florida. (Feb 2016).
+- **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Taniguchi, J., Yoshimura, J., Hattori, M., & Morishita, S. Meta-methylome of human gut microbiome using SMRT sequencing. _Advances in Genome Biology and Technology (AGBT) General Meeting_, Orlando, Florida. (Feb 2016).
 - **<u>Suzuki, Y.</u>**, Taniguchi, J., Yoshimura, J., Oshima, K., Hattori, M., & Morishita, S. _De novo_ metagenome assembly using PacBio long reads. _The Biology of Genomes, CSHL Meeting_, New York. (May 2015).
