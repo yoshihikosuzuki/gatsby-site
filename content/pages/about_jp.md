@@ -50,7 +50,7 @@ template: "page"
 - 論文題目: **"Metagenome assembly using PacBio long read (PacBio ロングリードを用いたメタゲノムアセンブリ)"**
 - 指導教官: 森下真一教授
 
-## フェローシップ・経験
+## フェローシップ等
 
 #### 2018 年 4 月 – 2020 年 3 月
 
