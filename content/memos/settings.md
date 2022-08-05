@@ -164,14 +164,6 @@ Host github.com
     ServerAliveInterval 60
 ```
 
-- 認証でエラーが出たら GitHub 用の SSH 秘密鍵を登録
-
-```bash
-$ eval `ssh-agent`   # Mac では不要
-$ ssh-add $HOME/.ssh/秘密鍵ファイル
-$ ssh-add -l   # 登録されている秘密鍵を確認
-```
-
 - `$ git log` をデフォルトでツリー表示するためにシェルの設定ファイルに以下を追加
 
 ```shell
