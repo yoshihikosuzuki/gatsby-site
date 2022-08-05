@@ -1,6 +1,6 @@
 ---
 title: "Web プログラミング(フロントエンド)覚書"
-template: "article"
+template: "memo"
 slug: "web-programming"
 description: "フロントエンド技術のまとめ場所。"
 ---

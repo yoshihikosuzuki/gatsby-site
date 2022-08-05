@@ -1,6 +1,6 @@
 ---
 title: Zotero で管理している PDF を iPad/モバイル端末から閲覧・編集する
-date: "2021-03-04"
+date: "2019-06-27"
 template: "post"
 draft: false
 slug: "zotero-with-ipad"

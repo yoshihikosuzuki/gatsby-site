@@ -1,6 +1,6 @@
 ---
 title: "C++ 競技プログラミングテンプレート"
-template: "article"
+template: "memo"
 slug: "competitive-programming-cpp-template"
 description: "マクロやコード片やアルゴリズムなど。"
 ---

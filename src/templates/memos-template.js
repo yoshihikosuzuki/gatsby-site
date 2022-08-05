@@ -14,7 +14,7 @@ type Props = {
   pageContext: PageContext
 };
 
-const ArticleTemplate = ({ data, pageContext }: Props) => {
+const MemoTemplate = ({ data, pageContext }: Props) => {
   const { title: siteTitle, subtitle: siteSubtitle } = useSiteMetadata();
 
   const {
@@ -27,7 +27,7 @@ const ArticleTemplate = ({ data, pageContext }: Props) => {
 
 
   const { edges } = data.allMarkdownRemark;
-  const pageTitle = currentPage > 0 ? `Articles - Page ${currentPage} - ${siteTitle}` : siteTitle;
+  const pageTitle = currentPage > 0 ? `Memos - Page ${currentPage} - ${siteTitle}` : siteTitle;
 
   return (
     <Layout title={pageTitle} description={siteSubtitle}>
@@ -46,11 +46,11 @@ const ArticleTemplate = ({ data, pageContext }: Props) => {
 };
 
 export const query = graphql`
-  query ArticleTemplate($postsLimit: Int!, $postsOffset: Int!) {
+  query MemoTemplate($postsLimit: Int!, $postsOffset: Int!) {
     allMarkdownRemark(
         limit: $postsLimit,
         skip: $postsOffset,
-        filter: { frontmatter: { template: { eq: "article" } } },
+        filter: { frontmatter: { template: { eq: "memo" } } },
         sort: { order: DESC, fields: [frontmatter___date] }
       ){
       edges {
@@ -69,4 +69,4 @@ export const query = graphql`
   }
 `;
 
-export default ArticleTemplate;
+export default MemoTemplate;

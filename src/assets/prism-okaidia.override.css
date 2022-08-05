@@ -1,0 +1,18 @@
+/* Both code blocks and inline code */
+code[class*="language-"] {
+    margin: 0em .2em;
+    text-shadow: none;
+}
+
+/* Code blocks */
+pre[class*="language-"] {
+    margin: 0;
+    border-radius: 1em;
+}
+
+/* Inline code */
+:not(pre) > code[class*="language-"] {
+	padding: 0 .2em;
+    color: #222;
+    background: #DDD;
+}

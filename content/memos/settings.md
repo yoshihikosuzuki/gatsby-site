@@ -1,27 +1,24 @@
 ---
-title: tmux & Alacritty の設定 (Mac)
-date: "2020-01-25"
-template: "post"
-draft: false
-slug: "alacritty-tmux-settings"
+title: 設定置き場 (ターミナル、エディタ、etc.)
+template: "memo"
+slug: "mac-settings"
 category: "Settings"
 tags:
   - "Settings"
-  - "tmux"
   - "Alacritty"
+  - "tmux"
   - "Mac"
-description: "Mac 用の tmux と Alacritty の設定。"
+description: "Mac 用の Alacritty、tmux、その他の設定。"
 ---
 
 ## 環境
 
-- macOS Catalina + zsh + Homebrew
-- tmux は `$ brew install tmux` でインストール
-- [Alacritty](https://github.com/alacritty/alacritty) は `$ brew cask install alacritty` でインストール
+- macOS + zsh (+ Homebrew)
 
-## tmux 設定
+## tmux
 
-- `$HOME/.tmux.conf`
+- `$ brew install tmux` でインストール
+- 設定ファイルは `$HOME/.tmux.conf`
 - 設定が反映されない場合は一度 `tmux kill-server` する
 
 ```ini
@@ -35,15 +32,16 @@ bind-key -T copy-mode MouseDragEnd1Pane send-keys -X copy-pipe-and-cancel "pbcop
 bind-key x kill-pane
 ```
 
-- 色を使うためにシェルの設定に以下を追加
+- 色を使うために `$HOME/.zshenv` に以下を追加
 
 ```shell
 export TERM='xterm-256color'
 ```
 
-## Alacritty 設定
+## Alacritty
 
-- `$HOME/.alacritty.yml`
+- [公式サイト](https://alacritty.org/) からインストーラを使ってインストール
+- 設定ファイルは `$HOME/.alacritty.yml`
 - Mac の option を alt キーにする
 
 ```yaml
@@ -142,5 +140,47 @@ export TERM='xterm-256color'
 
 ```shell
 export LANG='ja_JP.UTF-8'
+```
+
+## Git
+
+- `$HOME/.gitconfig`
+
+```ini
+[user]
+    name = ユーザ名
+    email = メールアドレス
+[color]
+    ui = auto
+```
+
+- SSH 接続の設定は `$HOME/.ssh/config` に記述
+
+```ini
+Host github.com
+    User ユーザ名
+    HostName ssh.github.com
+    IdentityFile ~/.ssh/秘密鍵ファイル名
+    ServerAliveInterval 60
+```
+
+- 認証でエラーが出たら GitHub 用の SSH 秘密鍵を登録
+
+```bash
+$ eval `ssh-agent`   # Mac では不要
+$ ssh-add $HOME/.ssh/秘密鍵ファイル
+$ ssh-add -l   # 登録されている秘密鍵を確認
+```
+
+- `$ git log` をデフォルトでツリー表示するためにシェルの設定ファイルに以下を追加
+
+```shell
+git() {
+    if [[ $@ == "log" ]]; then
+        git log --oneline --graph --decorate
+    else
+        command git "$@"
+    fi
+}
 ```
 

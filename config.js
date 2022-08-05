@@ -8,7 +8,7 @@ module.exports = {
   copyright: '',
   disqusShortname: '',
   postsPerPage: 4,
-  articlesPerPage: 4,
+  memosPerPage: 4,
   useKatex: true,
   menu: [
     {
@@ -17,7 +17,7 @@ module.exports = {
     },
     {
       label: 'Memo',
-      path: '/articles'
+      path: '/memos'
     },
     {
       label: 'About me',

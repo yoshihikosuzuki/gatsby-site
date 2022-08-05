@@ -1,6 +1,6 @@
 ---
 title: 使用頻度の低いコマンド置き場
-template: "article"
+template: "memo"
 slug: "commands"
 description: "たまに必要になるけど覚えているほど使用頻度が高くないコマンドやショートカットキーをメモ代わりに書き留めておく場所。"
 ---

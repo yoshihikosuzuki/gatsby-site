@@ -5,4 +5,4 @@ import PostPreview from './preview-templates/post-preview';
 
 CMS.registerPreviewTemplate('pages', PagePreview);
 CMS.registerPreviewTemplate('posts', PostPreview);
-CMS.registerPreviewTemplate('articles', PostPreview);
+CMS.registerPreviewTemplate('memos', PostPreview);
