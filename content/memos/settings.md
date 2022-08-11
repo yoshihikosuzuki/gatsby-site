@@ -11,9 +11,13 @@ tags:
 description: "Mac 用の Alacritty、tmux、その他の設定。"
 ---
 
-## 環境
+## 目次
 
-- macOS + zsh (+ Homebrew)
+```toc
+
+```
+
+環境は macOS + zsh (+ Homebrew)
 
 ## tmux
 
