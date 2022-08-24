@@ -11,8 +11,9 @@ description: "たまに必要になるけど覚えているほど使用頻度が
 
 ```
 
-### [Homebrew](https://brew.sh/index_ja)
+## Homebrew
 
+- [公式サイト](https://brew.sh/index_ja)
 - `--cask` オプションを付けると GUI アプリケーションだけを扱う
 
 | コマンド                               | 機能                                                      |
@@ -25,7 +26,7 @@ description: "たまに必要になるけど覚えているほど使用頻度が
 | `brew upgrade [--cask]`                | Homebrew 本体とパッケージのアップデート<br>たまに実行する |
 | `brew doctor`                          | 定期的に実行して、表示される問題を解消する                |
 
-### Git & GitHub
+## Git & GitHub
 
 - [ローカルのディレクトリを GitHub に追加する](https://docs.github.com/ja/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github):
 
@@ -38,12 +39,32 @@ git remote -v
 git push -u origin main
 ```
 
-### [PyPI パッケージ登録](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
+## PyPI パッケージ登録
 
+- [公式ドキュメント](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 - [TestPyPI](https://test.pypi.org/), [PyPI](https://pypi.org/) にアカウントを作成し、必要なパッケージをインストールしておく:
 
 ```bash
 python3 -m pip install --upgrade build twine
+```
+
+- アップロードの際に必要となるユーザ名とパスワードをコンフィグファイル `~/.pypirc` に書いておく ([公式ドキュメント](https://packaging.python.org/en/latest/specifications/pypirc/)):
+
+```
+[distutils]
+index-servers =
+  pypi
+  pypitest
+
+[pypi]
+repository = https://upload.pypi.org/legacy/
+username = ユーザ名
+password = パスワード
+
+[pypitest]
+repository = https://test.pypi.org/legacy/
+username = ユーザ名
+password = パスワード
 ```
 
 - 登録したいパッケージで `setup.[py|cfg]` と `pyproject.toml` を作っておく
@@ -69,13 +90,13 @@ python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps パ�
 python3 -m twine upload dist/*
 ```
 
-### Perl
+## Perl
 
 | コマンド            | 機能                     |
 | ------------------- | ------------------------ |
 | `cpan モジュール名` | モジュールをインストール |
 
-### Runby on Rails (& Jekyll)
+## Runby on Rails (& Jekyll)
 
 | コマンド                   | 機能                 |
 | -------------------------- | -------------------- |
@@ -83,7 +104,7 @@ python3 -m twine upload dist/*
 | `bundle update` | Gemfile 中の gem のバージョンを更新<br>注意して実行 |
 | `bundle exec jekyll serve` | ローカルでサイト実行 |
 
-### Gatsby
+## Gatsby
 
 | コマンド                     | 機能                                                                 |
 | ---------------------------- | -------------------------------------------------------------------- |
