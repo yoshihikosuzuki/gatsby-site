@@ -25,7 +25,7 @@ template: "page"
 
 - 特任研究員 @ 東京大学大学院 新領域創生科学研究科 メディカル情報生命専攻 森下研究室
 
-## 学歴
+## 学歴 & 学位論文
 
 #### 2017 年 4 月 – 2020 年 3 月
 
@@ -74,40 +74,43 @@ template: "page"
 - Excellent Research Award (最優秀賞) [博士論文; 東京大学大学院 新領域創生科学研究科 メディカル情報生命専攻] (2020 年)
 - Excellent Research Award (最優秀賞) [修士論文; 東京大学大学院 新領域創生科学研究科 メディカル情報生命専攻] (2017 年)
 
-## 出版物
+## 査読有り論文
 
 ### 学術雑誌
 
 - Takeuchi, T., <u>Suzuki, Y. (joint-first)</u>, Watabe, S., Nagai, K., Masaoka, T., Fujie, M., Kawamitsu, M., Satoh, N., & Myers, E. W. A high-quality, haplotype-phased genome reconstruction reveals unexpected haplotype diversity in a pearl oyster. (Under review)
-- <u>Suzuki, Y.</u>, Nishijima, S., Furuta, Y., Yoshimura, J., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Long-read metagenomic exploration of extrachromosomal mobile genetic elements in the human gut. _Microbiome_ **7**, 119 (2019).
+- <u>Suzuki, Y.</u>, Nishijima, S., Furuta, Y., Yoshimura, J., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Long-read metagenomic exploration of extrachromosomal mobile genetic elements in the human gut. _Microbiome_ **7**, 119 (2019). doi:10.1186/s40168-019-0737-z
 
 ### プロシーディング
 
-- <u>Suzuki, Y.</u> & Myers, G. Accurate k-mer classification using read profiles. _22nd International Workshop on Algorithms in Bioinformatics (WABI)_, Potsdam, Germany. (2022, Accepted).
+- <u>Suzuki, Y.</u> & Myers, G. Accurate k-mer classification using read profiles. In C. Boucher & S. Rahmann (Eds.), _22nd International Workshop on Algorithms in Bioinformatics (WABI 2022)_, 10:1–20. (2022). doi:10.4230/LIPIcs.WABI.2022.10
+
+## その他出版物
 
 ### 雑誌記事
 
-- <u>鈴木慶彦</u>、森下真一、ヒトゲノム完全解読の成功とその意義、実験医学　2022 年 8 月号、羊土社 (2022 年)
+- <u>鈴木慶彦</u>、森下真一、ヒトゲノム完全解読の成功とその意義、実験医学 2022 年 8 月号、羊土社 (2022 年) doi:10.18958/7061-00002-0000208-00
 - <u>鈴木慶彦</u>、西嶋傑、森下真一、ロングリードメタゲノミクス、ヒトマイクロバイオーム Vol.2、NTS (2020 年)
-- <u>鈴木慶彦</u>、森下真一、PacBio ロングリードを用いたメタゲノム解析、実験医学別冊　メタゲノム解析　実験ハンドブック、羊土社 (2016 年)
+- <u>鈴木慶彦</u>、森下真一、PacBio ロングリードを用いたメタゲノム解析、実験医学別冊 メタゲノム解析 実験ハンドブック、羊土社 (2016 年)
 
 ## 口頭発表 (太字は発表者)
 
 ### 国際学会
 
+- **<u>Suzuki, Y.</u>** & Myers, E. W. Accurate k-mer classification using read profiles. _22nd International Workshop on Algorithms in Bioinformatics (WABI 2022)_, Potsdam, Germany. (Sep 2022).
 - **<u>Suzuki, Y.</u>** & Myers, E. W. Accurate k-mer classification using read profiles. _Biodiversity Genomics 2021_, Online Conference. (Sep 2021).
 - **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Highly diversified metamethylome and metamobilome in human gut metagenomes. _SMRTLeiden_, Leiden, Netherland. (May 2017).
 - **<u>Suzuki, Y.</u>**, Nishijima, S., Furuta, Y., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Metagenome, metamobilome and meta-methylome of human gut flora uncovered by SMRT sequencing. _Advances in Genome Biology and Technology (AGBT) General Meeting_, Hollywood, Florida. (Feb 2017).
 
 ### 国内学会
 
-- **<u>鈴木慶彦</u>**、ロングリードのゲノムアセンブリ技術と腸内細菌叢解析、ゲノムテクノロジー第 164 委員会
-  第 56 回研究会、東京 (2018 年 4 月)
 - **池内健太**、<u>鈴木慶彦</u>、原泰史、企業のプレスリリース情報を用いたイノベーションの価値の測定、日本経済学会、京都 (2017 年 7 月)
 
-### その他
+### ワークショップ、セミナー、シンポジウム等
 
 - **<u>Suzuki, Y</u>** & Myers, E. W. Accurate k-mer classification using read profiles. _OIST-UT Genomics Research Seminar_, Okinawa, Japan. (Mar 2022).
+- **<u>鈴木慶彦</u>**、ロングリードのゲノムアセンブリ技術と腸内細菌叢解析、ゲノムテクノロジー第 164 委員会
+  第 56 回研究会、東京 (2018 年 4 月)
 
 ## ポスター発表 (太字は発表者)
 
