@@ -79,12 +79,12 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 
 ### Journals
 
-- Takeuchi, T., <u>Suzuki, Y. (joint-first)</u>, Watabe, S., Nagai, K., Masaoka, T., Fujie, M., Kawamitsu, M., Satoh, N., & Myers, E. W. A high-quality, haplotype-phased genome reconstruction reveals unexpected haplotype diversity in a pearl oyster. (Under review)
+- Takeuchi, T., <u>Suzuki, Y. (joint-first)</u>, Watabe, S., Nagai, K., Masaoka, T., Fujie, M., Kawamitsu, M., Satoh, N., & Myers, E. W. A high-quality, haplotype-phased genome reconstruction reveals unexpected haplotype diversity in a pearl oyster. (2022, Accepted)
 - <u>Suzuki, Y.</u>, Nishijima, S., Furuta, Y., Yoshimura, J., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Long-read metagenomic exploration of extrachromosomal mobile genetic elements in the human gut. _Microbiome_ **7**, 119 (2019). doi:10.1186/s40168-019-0737-z
 
 ### Conference Proceedings
 
-- <u>Suzuki, Y.</u> & Myers, G. Accurate k-mer classification using read profiles. In C. Boucher & S. Rahmann (Eds.), _22nd International Workshop on Algorithms in Bioinformatics (WABI 2022)_, 10:1–20. (2022). doi:10.4230/LIPIcs.WABI.2022.10
+- <u>Suzuki, Y.</u> & Myers, G. Accurate k-mer classification using read profiles. In C. Boucher & S. Rahmann (Eds.), _22nd International Workshop on Algorithms in Bioinformatics (WABI 2022)_, _Leibniz International Proceedings in Informatics_, **242**, 10:1–20. (2022). doi:10.4230/LIPIcs.WABI.2022.10
 
 ## Other Publications
 

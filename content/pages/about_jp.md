@@ -78,20 +78,20 @@ template: "page"
 
 ### 学術雑誌
 
-- Takeuchi, T., <u>Suzuki, Y. (joint-first)</u>, Watabe, S., Nagai, K., Masaoka, T., Fujie, M., Kawamitsu, M., Satoh, N., & Myers, E. W. A high-quality, haplotype-phased genome reconstruction reveals unexpected haplotype diversity in a pearl oyster. (Under review)
+- Takeuchi, T., <u>Suzuki, Y. (joint-first)</u>, Watabe, S., Nagai, K., Masaoka, T., Fujie, M., Kawamitsu, M., Satoh, N., & Myers, E. W. A high-quality, haplotype-phased genome reconstruction reveals unexpected haplotype diversity in a pearl oyster. (2022, Accepted)
 - <u>Suzuki, Y.</u>, Nishijima, S., Furuta, Y., Yoshimura, J., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Long-read metagenomic exploration of extrachromosomal mobile genetic elements in the human gut. _Microbiome_ **7**, 119 (2019). doi:10.1186/s40168-019-0737-z
 
 ### プロシーディング
 
-- <u>Suzuki, Y.</u> & Myers, G. Accurate k-mer classification using read profiles. In C. Boucher & S. Rahmann (Eds.), _22nd International Workshop on Algorithms in Bioinformatics (WABI 2022)_, 10:1–20. (2022). doi:10.4230/LIPIcs.WABI.2022.10
+- <u>Suzuki, Y.</u> & Myers, G. Accurate k-mer classification using read profiles. In C. Boucher & S. Rahmann (Eds.), _22nd International Workshop on Algorithms in Bioinformatics (WABI 2022)_, _Leibniz International Proceedings in Informatics_, **242**, 10:1–20. (2022). doi:10.4230/LIPIcs.WABI.2022.10
 
 ## その他出版物
 
 ### 雑誌記事
 
-- <u>鈴木慶彦</u>、森下真一、ヒトゲノム完全解読の成功とその意義、実験医学 2022 年 8 月号、羊土社 (2022 年) doi:10.18958/7061-00002-0000208-00
-- <u>鈴木慶彦</u>、西嶋傑、森下真一、ロングリードメタゲノミクス、ヒトマイクロバイオーム Vol.2、NTS (2020 年)
-- <u>鈴木慶彦</u>、森下真一、PacBio ロングリードを用いたメタゲノム解析、実験医学別冊 メタゲノム解析 実験ハンドブック、羊土社 (2016 年)
+- <u>鈴木慶彦</u>, 森下真一. ヒトゲノム完全解読の成功とその意義. 実験医学 2022 年 8 月号. 羊土社. (2022 年). doi:10.18958/7061-00002-0000208-00
+- <u>鈴木慶彦</u>, 西嶋傑, 森下真一. ロングリードメタゲノミクス. ヒトマイクロバイオーム Vol. 2. NTS. (2020 年).
+- <u>鈴木慶彦</u>, 森下真一. PacBio ロングリードを用いたメタゲノム解析. 実験医学別冊 メタゲノム解析 実験ハンドブック. 羊土社. (2016 年).
 
 ## 口頭発表 (太字は発表者)
 
@@ -104,13 +104,12 @@ template: "page"
 
 ### 国内学会
 
-- **池内健太**、<u>鈴木慶彦</u>、原泰史、企業のプレスリリース情報を用いたイノベーションの価値の測定、日本経済学会、京都 (2017 年 7 月)
+- **池内健太**, <u>鈴木慶彦</u>, 原泰史. 企業のプレスリリース情報を用いたイノベーションの価値の測定. 日本経済学会, 京都. (2017 年 7 月).
 
 ### ワークショップ、セミナー、シンポジウム等
 
 - **<u>Suzuki, Y</u>** & Myers, E. W. Accurate k-mer classification using read profiles. _OIST-UT Genomics Research Seminar_, Okinawa, Japan. (Mar 2022).
-- **<u>鈴木慶彦</u>**、ロングリードのゲノムアセンブリ技術と腸内細菌叢解析、ゲノムテクノロジー第 164 委員会
-  第 56 回研究会、東京 (2018 年 4 月)
+- **<u>鈴木慶彦</u>**. ロングリードのゲノムアセンブリ技術と腸内細菌叢解析. ゲノムテクノロジー第 164 委員会 第 56 回研究会, 東京. (2018 年 4 月).
 
 ## ポスター発表 (太字は発表者)
 
