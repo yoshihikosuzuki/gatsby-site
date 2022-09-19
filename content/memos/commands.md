@@ -28,7 +28,9 @@ description: "たまに必要になるけど覚えているほど使用頻度が
 
 ## Git & GitHub
 
-- [ローカルのディレクトリを GitHub に追加する](https://docs.github.com/ja/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github):
+### ローカルのディレクトリを GitHub に追加する
+
+- [公式ドキュメント](https://docs.github.com/ja/get-started/importing-your-projects-to-github/importing-source-code-to-github/adding-locally-hosted-code-to-github)
 
 ```bash
 # あらかじめ GitHub で新規レポジトリを作成しておく
@@ -37,6 +39,46 @@ git add . && git commit -m "initial commit"
 git remote add origin レポジトリURL
 git remote -v
 git push -u origin main
+```
+
+### タグを追加して自動でリリース公開
+
+- GitHub workflow で、タグが追加された時に自動でリリースを公開するように設定
+
+```yaml
+name: CI
+
+on:
+  push:
+    tags:
+      - "v*"
+
+jobs:
+  create_release:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+    outputs:
+      upload_url: ${{ steps.create_release.outputs.upload_url }}
+```
+
+- タグを作りリリースを作成
+
+```bash
+# あらかじめ git push まで済ませておく
+git tag v0.1
+git push origin v0.1
 ```
 
 ## PyPI パッケージ登録
@@ -50,7 +92,7 @@ python3 -m pip install --upgrade build twine
 
 - アップロードの際に必要となるユーザ名とパスワードをコンフィグファイル `~/.pypirc` に書いておく ([公式ドキュメント](https://packaging.python.org/en/latest/specifications/pypirc/)):
 
-```
+```toml
 [distutils]
 index-servers =
   pypi
