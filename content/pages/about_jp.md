@@ -78,7 +78,7 @@ template: "page"
 
 ### 学術雑誌
 
-- Takeuchi, T., <u>Suzuki, Y. (joint-first)</u>, Watabe, S., Nagai, K., Masaoka, T., Fujie, M., Kawamitsu, M., Satoh, N., & Myers, E. W. A high-quality, haplotype-phased genome reconstruction reveals unexpected haplotype diversity in a pearl oyster. (2022, Accepted)
+- Takeuchi, T., <u>Suzuki, Y. (joint-first)</u>, Watabe, S., Nagai, K., Masaoka, T., Fujie, M., Kawamitsu, M., Satoh, N., & Myers, E. W. A high-quality, haplotype-phased genome reconstruction reveals unexpected haplotype diversity in a pearl oyster. _DNA Research_ **29**(6), 1-13 (2022). doi:10.1093/dnares/dsac035
 - <u>Suzuki, Y.</u>, Nishijima, S., Furuta, Y., Yoshimura, J., Suda, W., Oshima, K., Hattori, M., & Morishita, S. Long-read metagenomic exploration of extrachromosomal mobile genetic elements in the human gut. _Microbiome_ **7**, 119 (2019). doi:10.1186/s40168-019-0737-z
 
 ### プロシーディング

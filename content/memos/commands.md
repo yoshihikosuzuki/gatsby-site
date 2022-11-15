@@ -152,3 +152,10 @@ python3 -m twine upload dist/*
 | ---------------------------- | -------------------------------------------------------------------- |
 | `gatsby develop`             | ローカルでサイト実行                                                 |
 | `gatsby build; gatsby serve` | ローカルでサイトをビルドして実行<br>より実際に近いサイトを生成できる |
+
+
+## AWS CLI
+
+- [公式ドキュメント](https://aws.amazon.com/jp/cli/)
+- `aws s3 ls --no-sign-request s3://<ディレクトリorファイル>`
+- `aws s3 sync --no-sign-request s3://<ディレクトリ> <ディレクトリ名>`
