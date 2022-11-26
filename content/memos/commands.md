@@ -132,6 +132,17 @@ python3 -m pip install --index-url https://test.pypi.org/simple/ --no-deps パ�
 python3 -m twine upload dist/*
 ```
 
+## Rust
+
+- [PyO3](https://github.com/PyO3/pyo3) で python パッケージの作成
+
+```bash
+maturin new パッケージ名   # もしくは maturin init
+...
+maturin build
+pip install target/wheels/*.whl
+```
+
 ## Perl
 
 | コマンド            | 機能                     |
