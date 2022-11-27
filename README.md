@@ -19,6 +19,7 @@
 - `$ gatsby clean; gatsby build; gatsby serve`: Production ディレクトリ (`public/`) を生成する。`clean`はしなくてもよいが、その場合変更が反映されない可能性がある
   - `gatsby-config.js`で`gatsby-plugin-algolia`プラグインが指定されていると、ビルドのたびに Algolia の検索インデックスが生成される。キーも消費するので、頻繁にビルドする場合は先にコメントアウトしておく
 - GitHub にプッシュすると自動で Netlify でデプロイされる
+- Netlify で `yarn.lcok` が必要な場合は `$ yarn install --ignore-engines`
 
 ## Plotly プロットの載せ方
 
