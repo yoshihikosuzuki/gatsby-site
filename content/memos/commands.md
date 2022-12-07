@@ -134,9 +134,13 @@ python3 -m twine upload dist/*
 
 ## Rust
 
+- [VScode に rust-analyzer を自前インストール](https://github.com/rust-lang/rust-analyzer/issues/13081#issuecomment-1222199782)
+  - `$ rustup toolchain install nightly --component rust-analyzer`
+  - VScode settings の `rust-analyzer.server.path` を `~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rust-analyzer` 等に設定
 - [PyO3](https://github.com/PyO3/pyo3) で python パッケージの作成
 
 ```bash
+# (pip install maturin しておく)
 maturin new パッケージ名   # もしくは maturin init
 ...
 maturin build
