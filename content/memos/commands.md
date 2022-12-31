@@ -34,10 +34,11 @@ description: "たまに必要になるけど覚えているほど使用頻度が
 
 ```bash
 # あらかじめ GitHub で新規レポジトリを作成しておく
-git init -b main
+git init
+git branch -M main
 git add . && git commit -m "initial commit"
 git remote add origin レポジトリURL
-git remote -v
+# `git remote -v` でリモートレポジトリが正しく追加されているか確認
 git push -u origin main
 ```
 
