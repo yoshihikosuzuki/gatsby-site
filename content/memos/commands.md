@@ -26,6 +26,15 @@ description: "たまに必要になるけど覚えているほど使用頻度が
 | `brew upgrade [--cask]`                | Homebrew 本体とパッケージのアップデート<br>たまに実行する |
 | `brew doctor`                          | 定期的に実行して、表示される問題を解消する                |
 
+## Dropbox
+
+### コマンドラインからダウンロードする
+
+```bash
+wget -O ファイル名.zip https://www.dropbox.com/...?dl=1
+7zz x ファイル名.zip
+```
+
 ## Git & GitHub
 
 ### ローカルのディレクトリを GitHub に追加する
@@ -82,7 +91,9 @@ git tag v0.1
 git push origin v0.1
 ```
 
-## PyPI パッケージ登録
+## Python
+
+### PyPI パッケージ登録
 
 - [公式ドキュメント](https://packaging.python.org/en/latest/tutorials/packaging-projects/)
 - [TestPyPI](https://test.pypi.org/), [PyPI](https://pypi.org/) にアカウントを作成し、必要なパッケージをインストールしておく:
@@ -135,10 +146,16 @@ python3 -m twine upload dist/*
 
 ## Rust
 
-- [VScode に rust-analyzer を自前インストール](https://github.com/rust-lang/rust-analyzer/issues/13081#issuecomment-1222199782)
-  - `$ rustup toolchain install nightly --component rust-analyzer`
-  - VScode settings の `rust-analyzer.server.path` を `~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rust-analyzer` 等に設定
-- [PyO3](https://github.com/PyO3/pyo3) で python パッケージの作成
+### VScode に rust-analyzer を自前インストール
+
+- [Github Issue](https://github.com/rust-lang/rust-analyzer/issues/13081#issuecomment-1222199782)
+
+1. `$ rustup toolchain install nightly --component rust-analyzer`
+2. VScode settings の `rust-analyzer.server.path` を `~/.rustup/toolchains/nightly-x86_64-unknown-linux-gnu/bin/rust-analyzer` 等に設定
+
+### python パッケージの作成
+
+- [PyO3](https://github.com/PyO3/pyo3)
 
 ```bash
 # (pip install maturin しておく)
@@ -168,7 +185,6 @@ pip install target/wheels/*.whl
 | ---------------------------- | -------------------------------------------------------------------- |
 | `gatsby develop`             | ローカルでサイト実行                                                 |
 | `gatsby build; gatsby serve` | ローカルでサイトをビルドして実行<br>より実際に近いサイトを生成できる |
-
 
 ## AWS CLI
 
