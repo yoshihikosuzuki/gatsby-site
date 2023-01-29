@@ -13,7 +13,11 @@ Genome sequence assembly is an inverse problem of reconstructing an original str
 
 ## Employment
 
-#### Apr 2022 –
+#### Jan 2023 –
+
+- Project Research Associate @ Morishita lab, The University of Tokyo
+
+#### Apr 2022 – Dec 2022
 
 - Postdoc @ Morishita lab, The University of Tokyo
 
