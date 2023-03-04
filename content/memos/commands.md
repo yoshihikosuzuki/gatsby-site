@@ -171,13 +171,57 @@ pip install target/wheels/*.whl
 | ------------------- | ------------------------ |
 | `cpan モジュール名` | モジュールをインストール |
 
+## Node
+
+### nodebrew
+
+- Node 自体のバージョン管理
+  - `$ brew install nodebrew` でインストール
+  - シェルの設定に `export PATH="$HOME/.nodebrew/current/bin:$PATH"` を追記
+
+| コマンド                             | 機能                                       |
+| ------------------------------------ | ------------------------------------------ |
+| `nodebrew ls`                        | インストールされているバージョン一覧を表示 |
+| `nodebrew ls-remote`                 | インストール可能なバージョン一覧を表示     |
+| `nodebrew install-binary バージョン` | そのバージョンをバイナリからインストール   |
+| `nodebrew use バージョン`            | そのバージョンを有効化                     |
+
+### npm (Node Package Manager)
+
+- 新規プロジェクト作成
+  - `$ npm init -y` (`-y`は非対話モード)
+  - `package.json`が作られる
+- パッケージのインストール
+  - `node_modules/`にインストールしたモジュールや実行ファイルには自動でパスが通るので、後述の npm scripts や`require()`ではプレフィックスは不要
+
+| コマンド                                | インストール先    | `package.json`との関係                         | 用途                                |
+| --------------------------------------- | ----------------- | ---------------------------------------------- | ----------------------------------- |
+| `$ npm install -g パッケージ名`         | 環境全体          | 依存関係には追加されない(が、記述すべき)       |                                     |
+| `$ npm install --save-dev パッケージ名` | `./node_modules/` | `devDependencies`にパッケージ名を追加          | 開発時にだけ使用するパッケージ      |
+| `$ npm install --save パッケージ名`     | `./node_modules/` | `dependencies`にパッケージ名を追加             | 実行時に(も)使用するパッケージ      |
+| `$ npm install`                         | `./node_modules/` | 記述されている依存パッケージを全てインストール | 既存レポジトリを clone した場合など |
+
+- 現在インストールされているバージョンと最新のバージョンを確認
+  - `$ npm outdated [-g|--save|--save-dev]`
+  - アップデート自体はインストールと同じコマンドで可能
+- npm scripts
+  - `package.json`中の`"scripts"`で定義されたコマンド群のこと
+  - `$ npm run`で一覧を表示できる
+  - 以下のような記述のとき、`タスク名` = `install`, `start`, `test`等なら`$ npm タスク名`で、その他(`build`等)は`$ npm run タスク名`で、`コマンド`を実行可能
+
+```json
+"scripts": {
+    "タスク名": "コマンド"
+}
+```
+
 ## Runby on Rails (& Jekyll)
 
-| コマンド                   | 機能                 |
-| -------------------------- | -------------------- |
-| `bundle install`             | Gemfile 中の gem をインストール |
-| `bundle update` | Gemfile 中の gem のバージョンを更新<br>注意して実行 |
-| `bundle exec jekyll serve` | ローカルでサイト実行 |
+| コマンド                   | 機能                                                |
+| -------------------------- | --------------------------------------------------- |
+| `bundle install`           | Gemfile 中の gem をインストール                     |
+| `bundle update`            | Gemfile 中の gem のバージョンを更新<br>注意して実行 |
+| `bundle exec jekyll serve` | ローカルでサイト実行                                |
 
 ## Gatsby
 

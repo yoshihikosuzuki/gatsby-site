@@ -167,15 +167,3 @@ Host github.com
     IdentityFile ~/.ssh/秘密鍵ファイル名
     ServerAliveInterval 60
 ```
-
-- `$ git log` をデフォルトでツリー表示するためにシェルの設定ファイルに以下を追加
-
-```shell
-git() {
-    if [[ $@ == "log" ]]; then
-        git log --oneline --graph --decorate
-    else
-        command git "$@"
-    fi
-}
-```
